@@ -1,0 +1,9 @@
+/* Entrada única de estilos. A ordem importa: base → shell → páginas → leitura → responsivo. */
+@import './base.css';
+@import './shell.css';
+@import './pages.css';
+@import './details.css';
+@import './modifiers.css';
+@import './library.css';
+@import './reading.css';
+@import './responsive.css';

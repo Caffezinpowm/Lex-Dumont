@@ -1,0 +1,1279 @@
+{
+  "fonte": {
+    "repositorio": "https://github.com/Project-Dumont/Dumont-Station",
+    "branch": "dumont",
+    "caminhos": [
+      "Resources/ServerInfo/Guidebook/ServerRules/SpaceLaw/",
+      "Resources/ServerInfo/_Gabystation/Guidebook/SpaceLawSubEntries/",
+      "Resources/ServerInfo/_Gabystation/Guidebook/LeiMarcial.xml",
+      "Resources/Prototypes/Guidebook/rules.yml"
+    ],
+    "licenca": "AGPL-3.0-or-later (conteúdo do repositório)",
+    "servidor": "Dumont Station / Gaby Station (Space Station 14, fork do Goob Station)"
+  },
+  "moeda": "spessos",
+  "unidade_pena": "minutos de prisão",
+  "niveis": [
+    {
+      "nivel": 0,
+      "codigo": "0-XX",
+      "nome": "Infração leve",
+      "cor": "#3cff01",
+      "titulo": "0-XX – Infração leve",
+      "descricao": "Crimes menores onde uma multa ou aviso deve ser previamente dado antes de prisão em caso de infração única. Esses crimes precisam de um reclamante fora da Segurança para serem processados, exceto quando o infrator integrar parte da Segurança.",
+      "pena_maxima": "4min ou multa de 400 spessos.",
+      "pena_minima": "Multa de 200 spessos.",
+      "observacoes_nivel": [],
+      "crimes": [
+        {
+          "codigo": "0-01",
+          "nome": "Transgressão",
+          "descricao": "Entrar em área restrita sem autorização na qual não possui devido acesso de forma acidental ou oportuna.",
+          "detalhes": [],
+          "ooc": "Isso é para apenas para casos menores onde um Borg/IA deixou a pessoa entrar ou o infrator aproveitou de uma porta aberta quando outra pessoa passou."
+        },
+        {
+          "codigo": "0-02",
+          "nome": "Furto Simples",
+          "descricao": "Furtar objeto ao qual não pertence a si ou seu departamento de forma oportuna sem invasão ou violência. Se o valor dos objetos furtados ultrapassar 500 spessos considere furto qualificado. Objetos furtados devem ser sempre devolvidos a seus donos ou departamentos.",
+          "detalhes": [],
+          "ooc": "Evitar que peguem qualquer coisa de um departamento sem permissão, ao mesmo tempo que não sendo uma pena muito dura caso sejam coisas simples."
+        },
+        {
+          "codigo": "0-03",
+          "nome": "Agressão",
+          "descricao": "Repetidos empurrões, agarramentos e/ou pequenos danos corporais sem objetivo de causar danos maiores a vítima.",
+          "detalhes": [],
+          "ooc": "Solução IC para confrontos leves, com dano corporal total abaixo de 20."
+        },
+        {
+          "codigo": "0-04",
+          "nome": "Vandalismo leve",
+          "descricao": "Degradação, pichação ou danificação menor de espaços e/ou ativos da estação de fácil reparo. Essa infração também cobre o descarte irregular de lixo pela estação e outras formas de criar sujeira sem justificativa aceitável.",
+          "detalhes": [],
+          "ooc": "Impedir grief gratuito como inundar corredores de cadeiras, mesas, armários, danificar janelas, similares e também impedir pichações pela estação."
+        },
+        {
+          "codigo": "0-05",
+          "nome": "Conduta Inadequada",
+          "descricao": "Agir de forma contrária as normas comuns esperadas da civilidade, dignidade e função.",
+          "detalhes": [],
+          "ooc": "Pessoas andando peladas, falando idiotices demais, spam de grito e outras formas LRP de agir, forma IC da Sec combater esse tipo de atitude."
+        },
+        {
+          "codigo": "0-06",
+          "nome": "Violação de termos",
+          "descricao": "Desobedecer ou ir contra termos definidos em acordo firmado em contrato. O criador do contrato pode decidir entre dar outra chance ou aplicar punições previstas no contrato.",
+          "detalhes": [],
+          "ooc": "Para ser usado em condicionais ou qualquer outro tipo de negociação ou acordo contratual IC."
+        },
+        {
+          "codigo": "0-07",
+          "nome": "Desacato",
+          "descricao": "Desrespeitar ou ofender um funcionário NanoTrasen no ato de sua função ou sem motivo justificável.",
+          "detalhes": [],
+          "ooc": "Para casos onde a pessoa está genuinamente seguindo a função dela e leva desrespeito gratuito. Caso a pessoa passe dos limites ou demonstre motivações OOC nos insultos informar via Ahelp."
+        },
+        {
+          "codigo": "0-08",
+          "nome": "Crueldade Animal",
+          "descricao": "Machucar, abusar, torturar, matar ou severamente negligenciar qualquer animal ou pet da estação sem motivo devido. Caso o animal seja um pet da estação, deve ser tratado como uma Infração grave em caso de danos ou maus- tratos, e Delito em caso de morte.",
+          "detalhes": [],
+          "ooc": "Evitar assistentes desocupados de fritarem o hamster da ponte no micro-ondas e punir aqueles que por motivo nenhum tentar machucar os pets da estação ou baraposas."
+        },
+        {
+          "codigo": "0-09",
+          "nome": "Calúnia",
+          "descricao": "Propositalmente espalhar mentira com intuito de degradar a reputação ou imagem de um tripulante ou departamento. Caso a mentira envolva a falsa denúncia de um crime considere Denúncia falsa de crime.",
+          "detalhes": [],
+          "ooc": "Impedir ações onde não há ofensa porém ainda existe tentativa de criar uma falsa narrativa, um exemplo seria um assistente dizer que uma área recentemente espaçada está assim a muito tempo e a Eng ainda não fez nada sobre, ou um tripulante recusando serviço a outro alegando falsamente ser por ordem de superior."
+        },
+        {
+          "codigo": "0-10",
+          "nome": "Contrabando departamental",
+          "descricao": "Posse, venda ou distribuição de contrabando da classe departamental sem permissão legal. Que são aqueles em sua maioria restritos a departamentos porém não possuem usos alternativos que possam oferecer algum risco a ativos ou tripulantes. Todo contrabando não autorizado deve ser confiscado. Consulte o manual para mais detalhes.",
+          "detalhes": [],
+          "ooc": "Consulte el manual. Em geral itens simples departamentais ou que não oferecem perigo ou grande vantagem como uniformes (uniforme de comandantes ou segurança é restrito), ferramentas sem necessidade para função. Coisas que o tripulante não deveria ter, mas não é super grave caso tenham."
+        },
+        {
+          "codigo": "0-11",
+          "nome": "Perturbação",
+          "descricao": "Propositalmente ou não, estiver causando incômodo a outros por meio de ações voluntarias.",
+          "detalhes": [],
+          "ooc": "“Voluntárias” significa que caso a pessoa sofra de anomalia, doença, glândula alienígena ou outra coisa fora de seu controle em gameplay, isso não se aplica. Em geral, serve quando a pessoa está incomodando outras sem que necessariamente esteja sendo LRP, como por excesso de emotes que não se enquadre como spam, música alta, conversa desconfortável ou qualquer outra coisa que esteja causando incomodo válido."
+        }
+      ]
+    },
+    {
+      "nivel": 1,
+      "codigo": "1-XX",
+      "nome": "Infração grave",
+      "cor": "#bbff00",
+      "titulo": "1-XX – Infração grave",
+      "descricao": "Crimes pequenos onde o dano é contido em um espaço limitado envolvendo apenas um ou poucos indivíduos. Esses crimes podem ser respondidos em flagrante mas nunca com força letal.",
+      "pena_maxima": "8min ou 1000 spesos.",
+      "pena_minima": "4min ou 600 spessos.",
+      "observacoes_nivel": [],
+      "crimes": [
+        {
+          "codigo": "1-01",
+          "nome": "Invasão",
+          "descricao": "Entrar em área restrita na qual não possui devido acesso sem autorização de forma proposital e forçada, com danos leves ou nenhum a equipamentos. Em caso de danos maiores, considere também Vandalismo Grave.",
+          "detalhes": [],
+          "ooc": "Usado para invasões durante falta de energia, hackeamento e outras formas de entrada forçada mas sem danos graves."
+        },
+        {
+          "codigo": "1-02",
+          "nome": "Furto qualificado",
+          "descricao": "Furtar de forma não violenta objetos de importância departamental de suprimento limitado que não podem facilmente, rapidamente ou a baixo custo serem substituídos. Furtos de valores acima de 500 spessos porém abaixo de 5.000 spessos, caso acima, considere Grande roubo. Objetos furtados devem ser sempre devolvidos a seus donos ou departamentos.",
+          "detalhes": [],
+          "ooc": "Impedir pessoas de saírem levando coisas importantes da Med e Eng roundstart, assim como também garantir que maiores pertences como mochilas tenham pena maior do que furto comum."
+        },
+        {
+          "codigo": "1-03",
+          "nome": "Lesão corporal",
+          "descricao": "Causar ataques e danos corporais de severidade moderada sem o intuito de matar, dos quais a vítima necessite de tratamento médico após confronto. Caso a vítima chegue a entrar em estado crítico, considerar Tentativa de homicídio.",
+          "detalhes": [],
+          "ooc": "Para maioria das brigas, onde ambos os lados não chegam a deixar o outro em crítico."
+        },
+        {
+          "codigo": "1-04",
+          "nome": "Vandalismo grave",
+          "descricao": "Dano considerável, destruição ou degradação de espaços, equipamentos e estruturas não vitais a estação ou departamento que se encontrem fora de áreas de alta segurança e não atrapalhem a função dos mesmos.",
+          "detalhes": [],
+          "ooc": "Destruição de vends de comida, mesas, móveis, destruição completa de janelas em áreas públicas sem quebrar a grade por baixo e outros diversos onde não chega a atrapalhar o departamento porém precisa de mais do que o esforço mínimo dos engenheiros para reparar."
+        },
+        {
+          "codigo": "1-05",
+          "nome": "Abuso de equipamento",
+          "descricao": "Uso e/ou retenção inadequada ou desnecessária de equipamentos departamentais.",
+          "detalhes": [],
+          "ooc": "Deve ser usado contra jogadores agarrando diversos itens roundstart como de vend, kits, hards e outros sem necessidade, e também contra pessoas abusando do equipamento que possui para incomodar."
+        },
+        {
+          "codigo": "1-06",
+          "nome": "Vigilantismo",
+          "descricao": "Como não segurança, desempenhar ou tentar realizar ações destinadas ao Departamento de Segurança sem motivo legal ou ordem direta.",
+          "detalhes": [],
+          "ooc": "Validhunting. Forma IC de lidar com jogadores que abandonam função ou segurança pessoal para irem atrás de antagonistas. Validhunting é contra as regras de roleplay do servidor, caso aconteça mais doque apenas o acaso, denuncie."
+        },
+        {
+          "codigo": "1-07",
+          "nome": "Insubordinação",
+          "descricao": "Propositalmente recusar a seguir, mal interpretar ou desobedecer ordem legal de superior ou autoridade. Resistir a demoção também é considerado Insubordinação. Se cometido durante Alerta Âmbar, equivalente ou superior, considerar Negligência. Insubordinação recorrente é motivo para demoção.",
+          "detalhes": [],
+          "ooc": "Ferramenta para chefes departamentais e segurança lidarem IC com jogadores ignorando sua autoridade. “Ordem legal” significa algo relevante a função, mandar alguém pegar sua correspondência ou um café como um Diretor de Pesquisas e esse jogador se recusar não é motivo válido para insubordinação."
+        },
+        {
+          "codigo": "1-08",
+          "nome": "Espionagem",
+          "descricao": "Obter acesso não autorizado a frequências de rádio, câmeras, documentos, reuniões, chamadas ou qualquer outro meio de compartilhamento de informações.",
+          "detalhes": [],
+          "ooc": "Punição generalizada para demais formas de espionagem que são menos destrutivas."
+        },
+        {
+          "codigo": "1-09",
+          "nome": "Denúncia falsa",
+          "descricao": "Propositalmente comunicar um crime ou situação de perigo inexistente ou acusar alguém de algo que não cometeu com o objetivo de prejudicar ou gastar tempo da segurança.",
+          "detalhes": [],
+          "ooc": "Objetivo de punir jogadores de ficarem gastando tempo da segurança com mentiras e por falsamente acusarem outras pessoas."
+        },
+        {
+          "codigo": "1-10",
+          "nome": "Contrabando restrito",
+          "descricao": "Posse, venda ou distribuição de contrabando da classe restrito sem permissão legal. Que são aqueles em sua maioria restritos a departamentos com usos principais ou alternativos que possam oferecer algum risco a ativos ou tripulantes. Todo contrabando não autorizado deve ser confiscado. Consulte o manual para mais detalhes.",
+          "detalhes": [],
+          "ooc": "Consulte el manual. Itens que por si não oferecem perigo, porém que podem ser usados de forma má intencionada. Exemplos sendo: Munições, vestes de proteção balística, chaves criptográficas de departamentos, itens falsos (Disco, balão NukeOps), RCDs, desencarceradores, algemas e similares."
+        },
+        {
+          "codigo": "1-11",
+          "nome": "Risco ao local de trabalho",
+          "descricao": "Colocar a si mesmo ou outros em risco ao criar um ambiente de trabalho perigoso sem devidas prevenções contra acidentes.",
+          "detalhes": [],
+          "ooc": "Para ser usado contra jogadores que criam situações perigosas onde alguém pode correr risco de morte caso trate o local como o mesmo é normalmente tratado roundstart e não haja prevenções ou avisos sobre os riscos."
+        },
+        {
+          "codigo": "1-12",
+          "nome": "Abandono",
+          "descricao": "Se ausentar de seu local de trabalho por longos períodos de tempo sem aviso ou justificativa.",
+          "detalhes": [],
+          "ooc": "Abandono de função. Para quando a med não está na med ou a eng não faz energia."
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "codigo": "2-XX",
+      "nome": "Delito",
+      "cor": "#ffae00",
+      "titulo": "2-XX – Delito",
+      "descricao": "Crimes que atrapalham a operação da estação ou colocam em risco ativos NanoTrasen, incluindo tripulantes. A suspeita de um crime desse nível é suficiente para declaração de Alerta Azul e devem ser respondidos pelas Segurança caso reportados, sempre que possível com força não letal.",
+      "pena_maxima": "12min ou multa de 1.800 spessos.",
+      "pena_minima": "8min ou 1.200 spessos.",
+      "observacoes_nivel": [],
+      "crimes": [
+        {
+          "codigo": "2-01",
+          "nome": "Invasão restrita",
+          "descricao": "Entrar em área restrita considerada de alta segurança na qual não possui devido acesso sem autorização ou de forma proposital e forçada.",
+          "detalhes": [],
+          "ooc": "Exemplos de áreas de alta segurança são sec, ponte, gerador principal, atmos, IA, comms e salas dos chefes de departamento."
+        },
+        {
+          "codigo": "2-02",
+          "nome": "Assalto",
+          "descricao": "Roubar pertence, dinheiro ou item de valor por meio de agressão ou ameaça. Se o valor dos bens levados ultrapassar 5.000 spessos aplica-se também Grande Roubo.",
+          "detalhes": [],
+          "ooc": "Auto explicativo."
+        },
+        {
+          "codigo": "2-03",
+          "nome": "Tentativa de homicídio",
+          "descricao": "Possuir intenção de matar alguém ou ter envolvimento em situação que faça alguém entrar em estado crítico. Caso a morte chegue a ocorrer considerar Homicídio.",
+          "detalhes": [],
+          "ooc": "Punição para casos onde a morte conseguiu ser impedida ou o autor foi interrompido durante ou antes do ato. Também serve como punição mais leve caso o autor não tenha intenção de matar e tente evitar a morte real ao cuidar do jogador em crítico."
+        },
+        {
+          "codigo": "2-04",
+          "nome": "Dano infraestrutural",
+          "descricao": "Dano ou destruição de paredes, janelas, portas herméticas, equipamentos, ativos e estruturas da estação ou departamentais que se encontrem dentro de áreas de alta segurança ou atrapalhem funções do departamento, mas que não cheguem a causar risco real.",
+          "detalhes": [],
+          "ooc": "Danos que não chegam a gerar perigo real porém atrapalhem a função do departamento, como desmontagem de paredes, uso de emags, disruptores de acesso, destruição de tornos ou danos a diversas paredes e janelas."
+        },
+        {
+          "codigo": "2-05",
+          "nome": "Resistência",
+          "descricao": "Ignorar toque de recolher, fugir de revista ou lutar com membros de segurança quando estão realizando sua função. Ignorar toque de recolher pode resultar no uso de força e prisão preventiva até o fim da emergência caso não haja cooperação do infrator.",
+          "detalhes": [],
+          "ooc": "Impedir circulação fora do departamento quando o mesmo se encontra sob quarentena, correr de revista em azul, correr de prisão, tirar uma arma e lutar quando sendo preso, etc. Tente sempre pedir para a pessoa voltar por conta própria antes de tentar prender ou matar no caso de toque de recolher."
+        },
+        {
+          "codigo": "2-06",
+          "nome": "Abuso de poder",
+          "descricao": "Utilizar de autoridade para exercer controle extremo fora de situação de emergência, criar benefício próprio, ignorar cadeia de comando ou para efetuar ordens que sejam ilegais ou sem relação com a função.",
+          "detalhes": [],
+          "ooc": "Impedir comandantes que pensam que ter um cargo de comando é permissão pra tratar todo mundo como escravo ou ignorar POP."
+        },
+        {
+          "codigo": "2-07",
+          "nome": "Greve não justificada",
+          "descricao": "Participar de greve, paralização ou revolta sem justa causa, de maneira perigosa ignorando dialogo, tentativas de resolução ou desescalonamento.",
+          "detalhes": [],
+          "ooc": "Contexto é importante, greves podem ocorrer de forma natural no round e devem ser apenas consideradas como crime se realmente estão sendo feitas sem motivo razoável ou estão recusando resolução pacifica."
+        },
+        {
+          "codigo": "2-08",
+          "nome": "Fraude",
+          "descricao": "Falsificar documento ou identidade própria, fingindo ser alguém que não é ou enganar com mentiras ou promessas falsas para benefício próprio.",
+          "detalhes": [],
+          "ooc": "Relevante para falsificação de documentos, uso de carimbos e canetas cybersun/CC para alteração de papeis, diversas formas de fingir ser outra pessoa e mentiras para conseguir obter algo de importância ou valor."
+        },
+        {
+          "codigo": "2-09",
+          "nome": "Detenção ilegal",
+          "descricao": "Reter ou restringir a liberdade de alguém sem consentimento ou justificativa legal.",
+          "detalhes": [],
+          "ooc": "Sequestros, trancar alguém em local e casos onde segurança retém alguém sem definição de sentença por tempo além do permitido em POP."
+        },
+        {
+          "codigo": "2-10",
+          "nome": "Contrabando perigoso",
+          "descricao": "Posse, venda ou distribuição de contrabando da classe perigosa sem permissão legal. Que são aqueles em sua maioria restritos a departamentos ou vindos de fora e com capacidade de risco a ativos ou tripulantes. Todo contrabando não autorizado deve ser confiscado. Consulte o manual para mais detalhes.",
+          "detalhes": [],
+          "ooc": "Consulte el manual. Itens que são naturalmente perigosos ou oferecem vantagem ou perigo significante. Exemplos são: Armas brancas, telecristais, uplink, chaves criptográficas do comando, segurança e sindicato, implantes ilegais utilitários, genes utilitários, granadas PEM, fumaça ou lubrificante, projetores camaleão, no slips, drogas não letais e muito mais."
+        },
+        {
+          "codigo": "2-11",
+          "nome": "Fauna espacial",
+          "descricao": "Ser indivíduo normalmente considerado como “fauna espacial comum”. Força letal é autorizada para erradicação de fauna espacial agressiva.",
+          "detalhes": [],
+          "ooc": "Existir é crime, NT loves us all. A ideia é tanto para ajudar seguranças novos a entender que essa ameaça é código azul e também para caso algum jogador tome conta de um mob agressivo, para que ainda possa ser processado se fizer besteira caso se torne protegido pelos direitos SolGov."
+        },
+        {
+          "codigo": "2-12",
+          "nome": "Negligência",
+          "descricao": "Falhar nos deveres básicos da função, seja por inação, erro ou falta de qualificação, causando efeitos negativos a indivíduos ou estação. Negligência, imprudência e imperícia são todos cobertos por esse crime. Adicionalmente, o chefe departamental pode optar por demoção ou retreinamento do indivíduo no lugar da pena. Caso resulte em mortes ou danos severos, considerar Alta Negligência.",
+          "detalhes": [],
+          "ooc": "Forma IC de lidar com jogadores tentando fazer algo fora de seu departamento e de também impedir ou forçar treinamento em jogadores falhando em suas funções."
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "codigo": "3-XX",
+      "nome": "Delito grave",
+      "cor": "#ff6600",
+      "titulo": "3-XX – Delito grave",
+      "descricao": "Crimes que põem em risco a ordem, tripulação, estação ou ativos NanoTrasen de importância. A confirmação de um crime desse nível é suficiente para declaração de Alerta Âmbar e devem se tornar prioridade da Segurança. Uso de força letal para imobilização é liberado caso avisos e negociação se mostrem ineficazes. A utilização de implantes de rastreamento é permitida se considerado necessário e aprovado em julgamento. Em caso de recusa do implante M-03 se aplica.",
+      "pena_maxima": "16min ou PERMA, negociações podem ser feitas.",
+      "pena_minima": "12min.",
+      "observacoes_nivel": [],
+      "crimes": [
+        {
+          "codigo": "3-01",
+          "nome": "Arrombamento",
+          "descricao": "Entrar em área restrita na qual não possui devido acesso de forma proposital e forçada por meio de explosivos ou outras formas altamente destrutivas de arrombamento.",
+          "detalhes": [],
+          "ooc": "Pena maior para casos onde usem C4, maxcap controlada ou outras formas de explosivos ou entradas que causem danos maiores do que um disruptor de acessos ou paredes/janelas desmontadas. Se fizeram dano maior do que o “normal” para adentrarem, é arrombamento."
+        },
+        {
+          "codigo": "3-02",
+          "nome": "Grande roubo",
+          "descricao": "Furtos cujo valor ultrapasse 5.000 spessos ou envolvam documentos secretos, documentos de alta segurança da Central de Comando ou ativos de alto risco da estação.",
+          "detalhes": [],
+          "ooc": "Usado para furtos grandes ou objetivos antag de roubo de itens importantes."
+        },
+        {
+          "codigo": "3-03",
+          "nome": "Homicídio",
+          "descricao": "Causar morte de indivíduo de forma direta ou indireta.",
+          "detalhes": [],
+          "ooc": "Assassinato, vale apenas caso a pessoa realmente chegue a morrer necessitando de desfribilização."
+        },
+        {
+          "codigo": "3-04",
+          "nome": "Sabotagem",
+          "descricao": "Atrapalhar, impedir ou prejudicar o trabalho ou função da estação ou departamento por meio de destruição ou alteração da infraestrutura ou atmosfera do local de forma maliciosa.",
+          "detalhes": [],
+          "ooc": "Importante é ser destruição limitada a apenas um ou dois departamentos e com objetivo de atrapalhar e não de matar, como remover cabos de energia, desafixar substações, causar plasmaflood ou espaçamento pequeno localizado e sem morte, utilizar powersink, ou outra coisa que prejudiquem um departamento inteiro, ou a estação de forma menor como desligar a gravidade e destruir SMES, mas que ainda é consertável e não tem potencial de destruição massiva."
+        },
+        {
+          "codigo": "3-05",
+          "nome": "Dano a cela",
+          "descricao": "Danificar intencionalmente os mecanismos de contenção da cela do qual o sujeito está aprisionado.",
+          "detalhes": [
+            "Avisos em caso de tentativas devem ser dados antes de qualquer ação tomada, caso avisos não sejam suficientes, oficiais devem interromper a ação e reiniciar a contagem da pena, aplicando maiores medidas de contenção se necessário, como solitária. Em caso de sucesso, aplica-se 4-05."
+          ],
+          "ooc": "Prisioneiros esfaqueando o carcereiro, quebrando paredes, etcétera."
+        },
+        {
+          "codigo": "3-06",
+          "nome": "Impulsos auto destrutivos",
+          "descricao": "Demonstrar falta de preocupação com bem estar e segurança própria, se colocando repetidas vezes em situação de risco ou agindo de forma prejudicial ou destrutiva sem zelo. Liberação somente com avaliação médica e autorização conjunta do Segurança Chefe e Carcereiro.",
+          "detalhes": [],
+          "ooc": "Usar contra jogadores que repetidas vezes se jogam no perigo, ignoram auto preservação ou buscam por briga como não seguranças."
+        },
+        {
+          "codigo": "3-07",
+          "nome": "Incitando revolta",
+          "descricao": "Ser figura central na organização ou planejamento de uma revolta, tentando convencer outros tripulantes a participarem do ato por qualquer meio efetivo.",
+          "detalhes": [],
+          "ooc": "Usando somente nas figuras chefes que estão tentando crescer e organizar a revolta. Se a pessoa for apenas participante aplica-se 2-07."
+        },
+        {
+          "codigo": "3-08",
+          "nome": "Relação à grupo externo",
+          "descricao": "Possuir vinculo confirmado e não autorizado com grupo externo de interesse, agindo como recrutador, agente, espião, representante ou aliado não relacionado à NanoTrasen. Esses indivíduos devem ser obrigatoriamente implantados com rastreadores e deve haver esforço em leva-los vivos e algemados para interrogatório na Central.",
+          "detalhes": [],
+          "ooc": "Maioria dos antags comuns, e com incentivo para Sec não mata-los ou deixá-los em perma sem bom motivo, mas ainda oferecendo desvantagem por ser descoberto."
+        },
+        {
+          "codigo": "3-09",
+          "nome": "Captura de autoridade",
+          "descricao": "Reter ou restringir a liberdade de alguém integrante do Comando ou Segurança da estação sem consentimento ou justificativa legal.",
+          "detalhes": [],
+          "ooc": "Sequestro, porém de comandantes ou segurança."
+        },
+        {
+          "codigo": "3-10",
+          "nome": "Contrabando letal",
+          "descricao": "Posse, venda ou distribuição de contrabando da classe letal sem permissão legal. Que são aqueles em sua maioria restritos a Segurança e Comando ou vindos de fora com usos principais ou alternativos que possam oferecer grave risco a ativos ou tripulantes. Todo contrabando não autorizado deve ser confiscado. Consulte o manual para mais detalhes.",
+          "detalhes": [],
+          "ooc": "Consulte el manual. Itens que são especialmente feitos ou possuem usos para matar ou destruir. Exemplos sendo: Emag, armas da estação, explosivos, chaves de criptografia da CC, drogas letais, drogas pesadas, itens úteis do sindicato, implantes e genes de combate, armas brancas e pistolas do Sindicato, drogas de combate, e outros."
+        },
+        {
+          "codigo": "3-11",
+          "nome": "Fauna espacial exótica",
+          "descricao": "Ser indivíduo normalmente considerado como “fauna espacial exótica” possuindo alta capacidade destrutiva se não contido, como dragões espaciais, ratos rei, xenomorfos anciões e bingles.",
+          "detalhes": [],
+          "ooc": "Se o animal por si com suas habilidades é mais perigoso do que três aranhas espaciais juntas, e não é algo que ocorre quase todo round, provavelmente se encaixa aqui. Xeno nesse caso são os sozinhos de evento, infestação de xenos com rainha se enquadram em Organismo atípico hostil."
+        },
+        {
+          "codigo": "3-12",
+          "nome": "Alta negligência",
+          "descricao": "Ser negligente ou incompetente de forma que resulte em danos reais ou potenciais severos a estação ou tripulantes. Negligência, imprudência e imperícia são todos cobertos por esse crime. Demoção deve ser aplicada para fora do departamento em que cometeu o ato. Adicionalmente, o chefe departamental, com autorização do Capitão pode optar por retreinamento do indivíduo adicionalmente a pena.",
+          "detalhes": [],
+          "ooc": "Casos como delaminar SM, soltar tesla, soltar singulo, estragar atmos, andar com artefatos ou materiais altamente radioativos, ativar nó de destruição em massa de artefato e diversos outros acidentes que podem ocorrer por fazer a função de forma errada ou fazer algo sem saber como."
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "codigo": "4-XX",
+      "nome": "Crime capital",
+      "cor": "#ff3401",
+      "titulo": "4-XX – Crime Capital",
+      "descricao": "Crimes que vão contra princípios SolGov ou NanoTrasen, gravemente ameaçando a vida, estação ou estrutura da corporação. A confirmação de um crime desse nível é suficiente para declaração de Alerta Vermelho, e dependendo das circunstancias o pedido de Lei Marcial. Esses devem se tornar a prioridade imediata da Segurança caso ocorram. Uso de força letal é permitido logo após um único aviso para rendição ser dado. A utilização de implantes de rastreamento ou psicoproteção é permitida se considerado necessário e aprovado via documentação pelo Segurança Chefe. Em caso de recusa M-03 se aplica.",
+      "pena_maxima": "PERMA ou EXECUÇÃO.",
+      "pena_minima": "16min.",
+      "observacoes_nivel": [],
+      "crimes": [
+        {
+          "codigo": "4-01",
+          "nome": "Invasão ao arsenal",
+          "descricao": "Adentrar o arsenal de forma não autorizada por qualquer meio, acidental ou não. Todo e qualquer indivíduo não autorizado dentro do arsenal deve ser considerado potencialmente hostil e fortemente armado, tendo o uso de força letal autorizada.",
+          "detalhes": [],
+          "ooc": "Entrar no arsenal sem autorização é um “não” gigante, não importa se é Sec ou Comando. Normalmente apenas Carcereiro, Segurança Chefe e Capitão possuem livre entrada ao arsenal, embora idealmente devam ainda pedir permissão ao Carcereiro e avisar sobre a entrada."
+        },
+        {
+          "codigo": "4-03",
+          "nome": "Massacre",
+          "descricao": "Assassinato de três ou mais indivíduos em intervalo curto de tempo sendo feito com auxilio ou de forma independente. Confinamento permanente deve ser sempre aplicado sem direito a julgamento caso o crime seja confirmado.",
+          "detalhes": [],
+          "ooc": "Intervalo em questão é 30min, contando mortes feitas em grupo (como traidores se ajudando) ou sozinhas. Isso significa que 3 objetivos de matar não vão te deixar preso na perma se for uma pessoa decente e não matar tudo e todos ao mesmo tempo."
+        },
+        {
+          "codigo": "4-04",
+          "nome": "Grande sabotagem",
+          "descricao": "Sabotar ou modificar de forma negativa sistema ou ativo crítico da estação, na qual a sabotagem afete toda ou a maioria da estação e tripulantes. Caso resulte em elevado número de mortes, considerar Inimigo da Estação.",
+          "detalhes": [],
+          "ooc": "Em geral o crime de sabotagem em larga escala, porém que não resultem na destruição total, inutilização completa dela ou número elevado de mortes diretas e sem aviso (se existe uma bomba do sindicato descoberta a área deveria ser evacuada, e não conviver com o beep ou tentarem desarmar com todo mundo perto. Se isso ocorrer o jogador antag não é responsável). Alguns exemplos seriam modificar a distro completa de forma não letal (N2O, reinserção de resíduos), tentar modificar ou destruir a IA, usar bomba do sindicato e espaçar diversas áreas."
+        },
+        {
+          "codigo": "4-05",
+          "nome": "Fuga de confinamento",
+          "descricao": "Escapar de confinamento após detido e processado. O fugitivo deverá ser re-capturado e ser julgado em tribunal para decidir entre medidas especiais ou execução. Caso a tentativa de fuga seja agressiva ou altamente destrutiva força letal é autorizada.",
+          "detalhes": [],
+          "ooc": "Escapar de perma ou cela. A decisão da punição deverá ser decidida em tribunal, como aumentar a pena ou pacificar o detento."
+        },
+        {
+          "codigo": "4-06",
+          "nome": "Deturpação biológica",
+          "descricao": "Manipular o corpo, genética, membros ou órgãos de um indivíduo de forma maliciosa, não autorizada ou sem consentimento.",
+          "detalhes": [],
+          "ooc": "Impedir geneticista de sair aplicando coisa em qualquer um ou mudar as espécies, também ter um crime maior para antags criativos que decidirem implantar uma minibomba no peito de alguém ou fazer outra graça durante cirurgia. De bônus torna abdutores válidos após descoberta de sequestros e glândulas."
+        },
+        {
+          "codigo": "4-07",
+          "nome": "Motim",
+          "descricao": "Tentar mudar ou desmanchar a cadeia de comando por meio de ação coletiva ou individual de forma violenta e ilegal.",
+          "detalhes": [],
+          "ooc": "Primeiramente contra rounds de revolucionários, porém existem situações em que motim é válido IC. Então é sempre bom saber o motivo pra ter certeza que não existe um capitão ou chefe departamental incompetente ou abusando de poder."
+        },
+        {
+          "codigo": "4-08",
+          "nome": "Prevenção de resgate",
+          "descricao": "Atrapalhar ou dificultar de forma ilegal direta ou indireta esforços de socorro à tripulante em estado crítico ou morto.",
+          "detalhes": [],
+          "ooc": "Ilegal é importante, paramédico não pode exigir acesso a área sensível ou perigosa só para conseguir fazer o resgate de um greytider, e deve idealmente buscar ajuda do pessoal departamental ou autorizado. A-03 protege dentro da razão e somente pessoas em situação crítica. Idealmente, é para punir pessoas atrapalhando resgate por antagonismo ou outro motivo, como dificultar acesso ao local, esconder corpo, desativar rastreio, impedir movimentação e etc."
+        },
+        {
+          "codigo": "4-09",
+          "nome": "Captura de refém",
+          "descricao": "Reter ou restringir a liberdade de alguém e usá-lo para barganha, distração, proteção ou atividade ilegal colocando a vida ou segurança do mesmo em risco.",
+          "detalhes": [],
+          "ooc": "Sequestro, porém também ameaçando matar a pessoa, usando como escudo, garantia ou obrigando-a a fazer algo com risco de morte. Idealmente deveria ser algo bem poderoso se a Sec decidir fazer roleplay ao invés de atirar no criminoso e refém juntos."
+        },
+        {
+          "codigo": "4-10",
+          "nome": "Contrabando crítico",
+          "descricao": "Posse, venda ou distribuição de contrabando da classe crítico sem permissão legal. Que são aqueles em sua maioria restritos a chefes departamentais, ativos experimentais NanoTrasen e externos considerados de alta importância ou risco pela corporação. Todo contrabando não autorizado deve ser confiscado. Consulte o manual para mais detalhes.",
+          "detalhes": [],
+          "ooc": "Itens de comandantes úteis, tecnologias experimentais da NT (servidor de pesquisa) e itens de alto perigo do Sindicato, como explosivos potentes, armas longas, antimov, mechas, borgs e hards de combate."
+        },
+        {
+          "codigo": "4-11",
+          "nome": "Enxame de fauna",
+          "descricao": "Ser ou fazer parte de quantidade elevada de fauna espacial hostil de modo que coloque em risco a integridade ou funcionamento da estação e esteja além da capacidade da Segurança sozinha.",
+          "detalhes": [],
+          "ooc": "Para quando dragão, rato rei, anomalias e outras coisas em alta quantidade quando estão forte demais e fora de controle com a segurança precisando de mais ajuda ou equipamentos."
+        },
+        {
+          "codigo": "4-12",
+          "nome": "Desobedecer a Central",
+          "descricao": "Ignorar ou recusar-se a seguir ordem diretamente dada por um oficial da Central de Comando ou individuo com autorização de oficial. Esse crime resulta em confinamento permanente com qualquer ação extra sendo feita somente com autorização da Central.",
+          "detalhes": [],
+          "ooc": "Oficial nesse caso seriam apenas Navy Officer, acima ou equivalente. Que não visitam a estação fora de Ômicron ou admeme."
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "codigo": "5-XX",
+      "nome": "Perigo crítico",
+      "cor": "#ff0000",
+      "titulo": "5-XX – Perigo critico",
+      "descricao": "Indivíduos ou ameaças altamente perigosas, exóticas, com objetivo de destruir a estação ou prejudicar a corporação. A confirmação de uma ameaça como essa é motivo para Alerta Vermelho imediato. Alerta Gamma ou equivalente deve ser solicitado a Central caso as forças de Segurança e Comando se demonstrem incapazes de conter a situação. Atirar para Matar (KoS) é autorizado a toda e qualquer ameaça declarada 5-XX. A utilização de implantes de rastreamento ou quaisquer considerados como necessários pelo Segurança Chefe é obrigatória pulando documentação necessária. Em caso de recusa M-03 se aplica.",
+      "pena_maxima": "EXTERMÍNIO.",
+      "pena_minima": "PERMA.",
+      "observacoes_nivel": [],
+      "crimes": [
+        {
+          "codigo": "5-01",
+          "nome": "Invasão na Central",
+          "descricao": "Adentrar ou tentar entrar em área restrita na qual não possui devido acesso sem autorização de forma proposital por qualquer meio enquanto se encontra na Central de Comando.",
+          "detalhes": [],
+          "ooc": "Só porque você pode fuzilar o greytider que pisou 1 tile na Sec da CC, não significa que deva, seja razoável, porém você pode sim fuzilar se quiser e perceber que a pessoa está agindo de forma LRP, na dúvida, peça para sair e diga que não terá segundo aviso. Lembrando que EORG é regra do servidor e se a pessoa estiver plantando C4 ou usando qualquer método destrutivo denuncie em ahelp."
+        },
+        {
+          "codigo": "5-03",
+          "nome": "Aniquilação",
+          "descricao": "Destruir completamente o corpo de uma vítima ou causar danos que tornem impossível a ressureição por métodos convencionais ou precisem de trabalho extenso e significativo para ressureição. Necessário avaliação do Médico Chefe para definição do crime.",
+          "detalhes": [],
+          "ooc": "Punição IC para RR. Vale quando o antag propositalmente tenta remover alguém do round de forma permanente, transformando o corpo em cinzas, gibbando, destruindo o cérebro ou causando quantidades massivas (>1000) de dano difícil de curar sem esforço significativo e o CMO acredita que não consegue recuperar o corpo original. Podridão não deve ser considerado."
+        },
+        {
+          "codigo": "5-04",
+          "nome": "Inimigo da estação",
+          "descricao": "Causar ou tentar causar dano massivo a estação, como delaminação do cristal de super matéria, sabotagem atmosférica massiva, pertubar o dispositivo de fissão nuclear ou a liberação de singularidade ou tesla. Qualquer ameaça que esteja pondo em risco a estação ou diversos tripulantes pode também ser declarada como Inimigo da Estação por concordância unânime do Comando e Representante NanoTrasen.",
+          "detalhes": [],
+          "ooc": "O pior tipo de sabotagem e carta branca para qualquer um que esteja sendo criativo (ou chato) o suficiente pra burlar as outras leis e mesmo assim fazer caos. Não abuse."
+        },
+        {
+          "codigo": "5-06",
+          "nome": "Terror biológico",
+          "descricao": "Propositalmente liberar, propagar ou causar surto de doença altamente contaminante e letal, procriar e propagar fauna ou flora hostil ou qualquer outro perigo biológico conhecido com objetivo de prejudicar a estação.",
+          "detalhes": [],
+          "ooc": "Romerol, doenças letais, xenobio, extrato de slimes perigosos, mil macacos agressivos, tomates assassinos e qualquer outra coisa do tipo que envolva ser o criador ou responsável por um perigo biológico existir."
+        },
+        {
+          "codigo": "5-08",
+          "nome": "Ameaça declarada",
+          "descricao": "Pertencer a lista de ameaças declaradas pela NanoTrasen.",
+          "detalhes": [],
+          "ooc": "Invasores externos (Piratas, Nukies, ERT Sindie) , Magos, Ninjas, Blob, Zumbis e outras coisas que NT conhece e avisa a segurança e comando da estação sobre, consultar a página de ameaças para conhecimento IC delas."
+        },
+        {
+          "codigo": "5-09",
+          "nome": "Terrorismo",
+          "descricao": "Criar morte e destruição por motivos políticos, religiosos, discriminatórios ou ideológicos.",
+          "detalhes": [],
+          "ooc": "Terrorismo por definição precisa ser um desses casos, o restante se enquadra em crimes diferentes. Em geral, é uma razão IC para lutar contra Cultos e Hereges com toda força da estação, embora possa ser aplicado em outras situações."
+        },
+        {
+          "codigo": "5-10",
+          "nome": "Contrabando especial",
+          "descricao": "Posse, venda ou distribuição de contrabando da classe especial sem permissão legal. Que são aqueles irremovíveis ou desconhecidos pela corporação. Todo contrabando não autorizado deve ser confiscado ou neutralizado. Consulte o manual para mais detalhes.",
+          "detalhes": [],
+          "ooc": "Consulte el manual. Em geral, contrabando mágico, altamente tecnológico, que a NT desconhece ou que não é possível remoção como artes marciais."
+        },
+        {
+          "codigo": "5-11",
+          "nome": "Organismo atípico hostil",
+          "descricao": "Entidade estranha não conhecida e hostil. Deve ser neutralizada e levada a Central para pesquisa.",
+          "detalhes": [],
+          "ooc": "Carta branca para hostilidades protegidas por metashield que a NT não sabe muito sobre, como Abdutores agressivos (se estiverem usando letal apenas), Vampiros, Slashers, Shadowlings, Demônios, Revenants e Morphs."
+        },
+        {
+          "codigo": "5-12",
+          "nome": "Lesa-Trasen",
+          "descricao": "De qualquer meio ou forma prejudicar a imagem ou reputação da corporação. Pode ser declarado apenas por oficial da Central de Comando ou Representante NanoTrasen, exceto em caso de assassinato ou tentativa contra oficial da Central de Comando. Sem direito a julgamento.",
+          "detalhes": [],
+          "ooc": "Normalmente para RP e para ser usado contra indivíduos que realmente estejam atrapalhando o jogo por falta de RP, competência ou self antag, principalmente quando comandante. Também um lembrete óbvio de que tentar qualquer coisa contra um oficial da Central não vai ter um bom final. Oficial nesse caso sendo Navy Officer, superior ou equivalente, nunca vistos na estação fora Ômicron ou admeme."
+        }
+      ]
+    }
+  ],
+  "modificadores": {
+    "introducao": "# Modificadores\nModificadores são feitos para reduzir/aumentar a duração de uma pena em caso de circustâncias especiais.\n\n## Agravantes",
+    "itens": [
+      {
+        "codigo": "M-01",
+        "nome": "Cúmplice",
+        "descricao": "Propositalmente auxiliar o autor de um crime, de forma direta ou indireta.\nAuxiliar ou ter relação em crime ou fuga de indiciado, direta ou indiretamente, de forma proposital. Caso a\npessoa seja apenas suspeita, sem confirmação dos crimes ou tenha dado ajuda mínima, mesmo que acidental\napós aviso da Segurança ainda podem ser acusados de Negligência caso o alerta atual se encontre em azul ou\nsuperior. Esse agravante pode ser aplicado sozinho sem dependência de crimes.",
+        "modificacao": "Adicionar a mesma pena do autor após agravantes."
+      },
+      {
+        "codigo": "M-02",
+        "nome": "Resistência",
+        "descricao": "Após detido, antes ou durante processamento, agir de forma não cooperativa que\natrapalhe o trabalho da Segurança.\nDemonstrar resistência após detido, tentando repetidas vezes fugir, desalgemar, desrespeitar, agredir, danificar\nou destruir evidências enquanto é processada sua sentença, mesmo após aviso.",
+        "modificacao": "Adicional de até 10min ou 1000 spessos, o tempo de processamento não será reduzido da pena final."
+      },
+      {
+        "codigo": "M-03",
+        "nome": "Recusa de implante",
+        "descricao": "Recusar um implante obrigatório conforme definido em POP ou Lei Espacial.\nDurante alertas Azul ou inferior, define-se confinamento permanente sem julgamento até que aceite o\nimplante. Em Âmbar, equivalente ou superior, define-se implantação forçada ou execução sem julgamento\ncaso não seja possível a implantação. A pena para remoção proposital direta ou indireta de um implante\nobrigatório deve ser julgada para execução, com pena mínima de confinamento permanente. Em caso de\nComando, Segurança ou Dignitários, enquadra-se como Lesa-Trasen.\nRecusa de implante de psicoproteção durante promoção para Comando interino ou Segurança NÃO se qualifica\ncomo crime, porém impede a promoção.",
+        "modificacao": "Perma, implantação forçada ou execução."
+      },
+      {
+        "codigo": "M-04",
+        "nome": "Reincidência",
+        "descricao": "Repetir a mesma ofensa após já ter sido advertido e punido.\nEm infrações leves, o primeiro aviso dado nunca deve contar para reincidências e nunca devem resultar em\nconfinamento permanente. A primeira e segunda reincidências, devem ocorrer acréscimos de 50% e então\n100% na pena. Em caso de terceira reincidência a pena deve receber acréscimo de 200% sem direito a fiança em\ncaso de prisão.",
+        "modificacao": "Acréscimo de 50%; acréscimo de 100%; acréscimo de 200% sem direito a fiança em caso de prisão."
+      },
+      {
+        "codigo": "M-05",
+        "nome": "Múltiplos crimes",
+        "descricao": "Realizar vários crimes ao mesmo tempo.\nCasos em que o indivíduo cometa múltiplos crimes pertencentes a níveis iguais ou inferiores, dos quais não sejam\nanulados ou sobrepostos pelo processamento de pena. CADA crime adicional deverá impor um acréscimo de\n10% na pena final. \nA pena máxima/miníma é definida pelo crime de maior nível.",
+        "modificacao": "Adicional de 10% na pena para cada crime extra cometido em uma mesma categoria."
+      },
+      {
+        "codigo": "M-06",
+        "nome": "Figura de autoridade",
+        "descricao": "Realizar um crime sendo uma figura de autoridade na estação.\nQuando o autor do crime é indivíduo normalmente considerado como de poder e autoridade na estação,\nexemplos sendo membros da Segurança, Comando ou Dignitários. Todo e qualquer crime de categoria Delito ou\nsuperior cometido por autoridade deve ser notificado a Central de Comando.\n\n\n## Atenuantes",
+        "modificacao": "Adicional de 50% na pena final e envio de aviso a Central de Comando."
+      },
+      {
+        "codigo": "A-01",
+        "nome": "Cooperação",
+        "descricao": "Se render ou demonstrar-se útil para segurança.\nEm caso de rendição não violenta, delação de outros crimes de relevância ou outra forma de cooperação que a\nSegurança considere de utilidade, a pena deve ser reduzida pela metade. Em caso de delação, o Segurança\nChefe pode autorizar reduções superiores à 50% e até mesmo liberação imediata para qualquer sentença que\nnão envolva crimes capitais ou superior, esses podendo apenas com autorização da Central, caso a informação\nadquirida seja considerada valiosa para os interesses da estação e corporação. Em delações o atenuante pode\nser apenas aplicado caso se provem verdadeiras.",
+        "modificacao": "Redução de 50% da pena; Superior em caso de delações com autorização do Segurança Chefe."
+      },
+      {
+        "codigo": "A-02",
+        "nome": "Fora de si",
+        "descricao": "Realizar ações forçadamente por meio de controle mental.\nSe verificado que há alguma forma de influência externa forçando a pessoa a agir de tal forma, deve ser aplicado\no implante de psicoproteção, feita avaliação médica e psicológica, e então o indivíduo deve ser liberado sem\naplicação de penas.",
+        "modificacao": "Liberação após tratamento."
+      },
+      {
+        "codigo": "A-03",
+        "nome": "Risco imediato a vida",
+        "descricao": "Realizar ação para salvar a outro ainda vivo ou a si mesmo de morte iminente.\nInfrações leves, infrações graves e delitos, devem ser perdoados em caso de salvamento legal desde que feitos\nem boa fé e dentro dos limites da razão. Essa proteção não se estende a delitos graves ou acima que devem ser\njulgados se a ação foi realmente necessária. Caso a pessoa ponha-se em risco excessivamente ou nunca procure\nanteriormente ajuda do Comando e Segurança a pena de Impulsos auto destrutivos deve ser considerada. Caso\no autor possua histórico com Impulsos auto destrutivos, o atenuante não se aplica.",
+        "modificacao": "Liberação em casos 0-XX, 1-XX e 2-XX. Julgamento para 3-XX ou superior. Exceto na presença de Impulsos auto destrutivos."
+      },
+      {
+        "codigo": "A-04",
+        "nome": "Auto defesa",
+        "descricao": "Realizar ação, dentro dos limites razoáveis, para defender a si mesmo ou ambiente de\ntrabalho.\nInfrações leves, infrações graves e delitos, devem ser perdoados em caso de auto defesa legal desde que feitos\nem boa fé e dentro dos limites da razão. Essa proteção não se estende a delitos graves ou acima que devem ser\njulgados se a ação foi realmente necessária. Caso a pessoa ponha-se em risco excessivamente ou nunca procure\nanteriormente ajuda do Comando e Segurança a pena de Impulsos auto destrutivos deve ser considerada. Caso\no autor possua histórico com Impulsos auto destrutivos, o atenuante não se aplica.",
+        "modificacao": "Liberação em casos 0-XX, 1-XX e 2-XX. Julgamento para 3-XX ou superior. Exceto na presença de Impulsos auto destrutivos."
+      },
+      {
+        "codigo": "A-05",
+        "nome": "Acidente",
+        "descricao": "Realizar ação de forma genuinamente não intencional e acidental.\nEm casos assim a pena deve ser reduzida em até metade caso investigação demonstre que a falha foi realmente\nacidental sem intenção de cometer o ato ou houve esforço real em remediar o erro. Se a falha teve ligação com\na função o chefe departamental relevante pode escolher aplicar ou não a pena de Negligência, mesmo que\noutra pena da categoria já tenha sido aplicada. Esse atenuante não se aplica para casos de crimes capitais ou\nacima, ou em casos envolvendo Alta Negligência.",
+        "modificacao": "Redução da pena de 25% a 50%. Exceto em casos de Alta Negligência."
+      },
+      {
+        "codigo": "A-06",
+        "nome": "Arrependimento",
+        "descricao": "Demonstrar-se genuinamente arrependido de cometer um crime.\nQuando o autor do crime demonstra remorso, arrependimento, melancolia, vontade de mudar ou outras\nformas de demonstrar possuir peso na consciência consequente das ações realizadas. Requer avaliação\nrealizada por Psicólogo ou Médico Chefe. Se verificado arrependimento real a pena pode ser reduzida de 25% a\n50% com o limite de 10min de redução.",
+        "modificacao": "Redução de 25% a 50% da pena, com limite de 10min."
+      },
+      {
+        "codigo": "A-07",
+        "nome": "Bom comportamento",
+        "descricao": "Possuir comportamento exemplar e respeitável enquanto preso.\nCooperação com autoridades, respeito a oficiais, convivência amigável com outros detentos e manutenção da\nlimpeza e organização da cela são todos exemplos de bom comportamento. Caso a Segurança acredite que o\nindivíduo não apresenta risco significativo para a estação e esteja reformado, fica à disposição do Carcereiro, e\nsomente dele escolher ou não a aplicação desse atenuante, resultando na liberação adiantada quando o tempo\nrestante da pena for inferior a 10min e possibilidade de condicional em casos de confinamento permanente.",
+        "modificacao": "Liberação adiantada caso faltem menos de 10min de pena. Possibilidade de condicional em caso de perma."
+      },
+      {
+        "codigo": "A-08",
+        "nome": "Tentativa",
+        "descricao": "Tentar, planejar ou preparar a execução de um crime ou atividade ilegal futura ou presente.\nTentativa ou execução de conspiração, idealização, equipagem, coordenação, preparação, planejamento ou\nação de qualquer forma para um crime com a intenção de seguir em frente com o mesmo, seja sozinho, em\ngrupo ou indiretamente por meio de ação ou inanição. Se demonstrada e comprovada como além do simples\nacaso, o crime conspirado deve ter sua pena aplicada como se o mesmo fosse uma categoria abaixo de sua real.\nEsse atenuante pode ser aplicado sozinho independente de outros crimes. Tentativa de homicídio é o seu\npróprio crime.",
+        "modificacao": "Aplicar pena como se todos os crimes fossem uma categoria abaixo."
+      },
+      {
+        "codigo": "A-09",
+        "nome": "Perdão do Capitão",
+        "descricao": "Receber perdão incondicional do Capitão da estação.\nO Capitão possui o poder de a todo momento perdoar qualquer indivíduo na estação independentemente do\ncrime cometido EXCETO Lesa-Trasen. Esse perdão é válido apenas por documento oficial do Capitão assinado e\ncarimbado, com uma cópia sendo deixada com o Segurança Chefe e outra enviada a Central. O mesmo\nsobrescreve demais penas, ordens e julgamentos podendo ser retirado somente via ordem da Central,\nMagistrado presente, comprovação de que o Capitão não está em pleno estado mental ou por meio de devida\ndemoção do capitão caso se prove inapto para função.",
+        "modificacao": "Liberação imediata."
+      }
+    ]
+  },
+  "guia_rapido": {
+    "titulo": "Guia rápido: séries de crimes que escalam de nível",
+    "descricao": "Cada série X-NN agrupa crimes do mesmo tipo em níveis de gravidade crescente. Números ausentes na fonte ficam vazios.",
+    "niveis": [
+      "0-XX",
+      "1-XX",
+      "2-XX",
+      "3-XX",
+      "4-XX",
+      "5-XX"
+    ],
+    "series": [
+      {
+        "serie": "X-01",
+        "crimes_por_nivel": {
+          "0-XX": "Transgressão",
+          "1-XX": "Invasão",
+          "2-XX": "Invasão restrita",
+          "3-XX": "Arrombamento",
+          "4-XX": "Invasão ao arsenal",
+          "5-XX": "Invasão na Central"
+        }
+      },
+      {
+        "serie": "X-02",
+        "crimes_por_nivel": {
+          "0-XX": "Furto Simples",
+          "1-XX": "Furto qualificado",
+          "2-XX": "Assalto",
+          "3-XX": "Grande roubo",
+          "4-XX": "",
+          "5-XX": ""
+        }
+      },
+      {
+        "serie": "X-03",
+        "crimes_por_nivel": {
+          "0-XX": "Agressão",
+          "1-XX": "Lesão corporal",
+          "2-XX": "Tentativa de homicídio",
+          "3-XX": "Homicídio",
+          "4-XX": "Massacre",
+          "5-XX": "Aniquilação"
+        }
+      },
+      {
+        "serie": "X-04",
+        "crimes_por_nivel": {
+          "0-XX": "Vandalismo leve",
+          "1-XX": "Vandalismo grave",
+          "2-XX": "Dano infraestrutural",
+          "3-XX": "Sabotagem",
+          "4-XX": "Grande sabotagem",
+          "5-XX": "Inimigo da estação"
+        }
+      },
+      {
+        "serie": "X-05",
+        "crimes_por_nivel": {
+          "0-XX": "Conduta Inadequada",
+          "1-XX": "Abuso de equipamento",
+          "2-XX": "Resistência",
+          "3-XX": "Dano a cela",
+          "4-XX": "Fuga de confinamento",
+          "5-XX": ""
+        }
+      },
+      {
+        "serie": "X-06",
+        "crimes_por_nivel": {
+          "0-XX": "Violação de termos",
+          "1-XX": "Vigilantismo",
+          "2-XX": "Abuso de poder",
+          "3-XX": "Impulsos auto destrutivos",
+          "4-XX": "Deturpação biológica",
+          "5-XX": "Terror biológico"
+        }
+      },
+      {
+        "serie": "X-07",
+        "crimes_por_nivel": {
+          "0-XX": "Desacato",
+          "1-XX": "Insubordinação",
+          "2-XX": "Greve não justificada",
+          "3-XX": "Incitando revolta",
+          "4-XX": "Motim",
+          "5-XX": ""
+        }
+      },
+      {
+        "serie": "X-08",
+        "crimes_por_nivel": {
+          "0-XX": "Crueldade Animal",
+          "1-XX": "Espionagem",
+          "2-XX": "Fraude",
+          "3-XX": "Relação à grupo externo",
+          "4-XX": "Prevenção de resgate",
+          "5-XX": "Ameaça declarada"
+        }
+      },
+      {
+        "serie": "X-09",
+        "crimes_por_nivel": {
+          "0-XX": "Calúnia",
+          "1-XX": "Denúncia falsa",
+          "2-XX": "Detenção ilegal",
+          "3-XX": "Captura de autoridade",
+          "4-XX": "Captura de refém",
+          "5-XX": "Terrorismo"
+        }
+      },
+      {
+        "serie": "X-10",
+        "crimes_por_nivel": {
+          "0-XX": "Contrabando departamental",
+          "1-XX": "Contrabando restrito",
+          "2-XX": "Contrabando perigoso",
+          "3-XX": "Contrabando letal",
+          "4-XX": "Contrabando crítico",
+          "5-XX": "Contrabando especial"
+        }
+      },
+      {
+        "serie": "X-11",
+        "crimes_por_nivel": {
+          "0-XX": "Perturbação",
+          "1-XX": "Risco ao local de trabalho",
+          "2-XX": "Fauna espacial",
+          "3-XX": "Fauna espacial exótica",
+          "4-XX": "Enxame de fauna",
+          "5-XX": "Organismo atípico hostil"
+        }
+      },
+      {
+        "serie": "X-12",
+        "crimes_por_nivel": {
+          "0-XX": "",
+          "1-XX": "Abandono",
+          "2-XX": "Negligência",
+          "3-XX": "Alta negligência",
+          "4-XX": "Desobedecer a Central",
+          "5-XX": "Lesa-Trasen"
+        }
+      }
+    ]
+  },
+  "documentos": [
+    {
+      "id": "introducao",
+      "titulo": "Lei Espacial — Introdução",
+      "markdown": "# Lei Espacial\nA Lei Espacial é uma série de regras e diretrizes corporativas empregadas pela NanoTrasen com autorização\nSolGov para ser utilizada a bordo de suas embarcações.\nTodos os funcionários NanoTrasen estão sujeitos e protegidos por ela, incluindo o pessoal de segurança e\ncomando. A Lei Espacial também se aplica a qualquer ser senciente a bordo de uma embarcação NanoTrasen, seja\nele funcionário ou não.\n\nCrimes são separados por níveis de severidade, indo de infração leve a perigo extremo.\n\n  # Direito Universal à Vida SolGov\nÉ expressamente proibido rescindir a integridade vital, funcional ou material de qualquer entidade senciente ou\nsapiente, exceto caso essa se demonstre comprovadamente uma ameaça, altamente disruptiva ou hostil.\nSolGov vê. SolGov sabe.\n\nA autoridade da NanoTrasen cede diante do Direito Universal à Vida promulgado pelo SolGov, Infrações\nresultarão em pena equivalente pela lei espacial com possível intervenção federal.\n\n- OOC: Não seja um babaca. RP deve ser priorizado acima de “vencer”. Quase tudo que possui um balão de fala\ntem um jogador por trás, não estrague o jogo de alguém se essa pessoa não está sendo um problema. Essa\nregra é especificamente para casos especiais como artefatos não perigosos, agentes livres ou animais\nsencientes, coisas controladas por jogadores que não oferecem perigo e demonstrem alta inteligência e\ncapacidade IC. Ratos rei, Xenos, Metamorfos e outros antagonistas ainda são todos alvos válidos.\n\n\n\n  ## Listagem de Crimes\n  - [Listagem de Crimes](#SpaceLawCrimeList)"
+    },
+    {
+      "id": "direitos-prisioneiro",
+      "titulo": "Direitos de prisioneiro",
+      "markdown": "## Tratamento de Prisioneiros\n  Prisioneiros ainda tem certos direitos que devem ser protegidos por agentes da lei:\n  - Prisioneiros devem ter acesso a tratamento médico adequado.\n  - Prisioneiros devem ter acesso a equipamento de comunicação básica (rádios) contanto que eles não abusem do privilégio.\n  - Prisioneiros devem ter acesso a roupa, comida, água, abrigo e segurança. Se a Brig não for mais segura, o confinamento deve ser estabelecido em outro lugar.\n  - Prisioneiros devem ter acesso à consultoria jurídica durante um interrogatório caso seja requisitado.\n  - Prisioneiros devem receber seus PDAs de volta após pagarem suas penas, a menos que haja evidências de adulteração envolvendo o PDA. No caso de adulteração, o PDA deve ser confiscado e substituído com uma unidade nova (o Chefe dos Funcionários pode fazer isso).\n  - Prisioneiros devem ter acesso à liberdade de movimento, e não devem ser presos com algemas ou outros dispositivos após o encarceramento a menos que haja um risco à vida. De forma similar, quaisquer prisioneiros cumprindo confinamento permanente devem ser postos na cela comunitária, e não devem ser confinados em uma cela solitária a menos que haja um risco à vida."
+    },
+    {
+      "id": "contrabando",
+      "titulo": "Manual de Contrabando",
+      "markdown": "# Contrabando\n\nContrabando é qualquer item que é restrito ser utilizado por certos ou todos os membros da tripulação.\nA posessão de contrabando não autorizado é motivo para punição pelos crimes X-10. \n\nTodo item definido como contrabando tem 2 classificações associadas a ele: Origem e nível.\n\n## Nível de Contrabando\nO nível de contrabando define o nível de severidade de crime que será aplicado caso for descoberto.\n\n### Departamental\nContrabando que pertence a um departamento específico, porém que não mostra risco próprio a ativos ou tripulantes.\n\nExemplos: Itens cosméticos, ferramentas.\n\n### Restrito\nContrabando que pode mostrar perigoso nas mãos das pessoas erradas.\n\nExemplos: Armadura, munição, chaves criptográficas de departamentos, algemas.\n\n### Perigoso\nContrabando que possui capacidade considerável a causar danos aos ativos da estação.\n\nExemplos: Drogas não letais, implantes, chaves criptográficas de segurança ou comando, armas brancas.\n\n### Letal\nContrabando feito expressamente para causar dano aos ativos da estação.\n\nExemplos: Armas laser, explosivos, mutações dedicadas ao combate.\n\n### Crítico\nContrabando restrito a chefes departamentais ou de extremo perigo aos ativos da estação.\n\nExemplos: Servidor de pesquisa, explosivos grandes, equipamento de alto valor.\n\n### Especial\nContrabando desconhecido a NanoTrasen, ou que não é possível a remoção.\n\nExemplos: Artes marciais, itens de interesse do vaticano.\n\n## Origem\nA origem do contrabando define se a posse dele pode ser autorizado por uma autoridade competente.\n\n### Equipamento \nEquipamento que origina da estação ou de uma subsidiária da NanoTrasen, e formalmente legalizado.\nTodo equipamento pode ser autorizado pelo chefe do departamento do qual pertence.\n\nExemplos: RCDs, armas de segurança.\n\n### Externo\nContrabando improvisado ou do qual o seu uso não é formalmente permitido.\nItens externos apenas podem ser autorizados pelo Chefe de Segurança ou Capitão caso absolutamente necessário para a função de um trabalho.\n\nExemplos: Armas improvisadas, armas laser retrô.\n\n### Sindicalista\nContrabando produzido diretamente pelo Sindicato.\nItens do sindicato apenas podem ser utilizados caso absolutamente necessário e em Gamma, \nDelta ou equivalente, e devem ser armazenados e entregados ao Representativo da NanoTrasen.\n\nExemplos: Armas do sindicato, roupas do sindicato, equipamento do sindicato.\n\n### Desconhecido\nContrabando cuja origem não pode ser decifrada.\nContrabando desconhecido deve ser investigado e reportado para a Central ou o Representativo da NanoTrasen.\n\nNenhum exemplo existe."
+    },
+    {
+      "id": "sentenciamento",
+      "titulo": "Sentenciamento e procedimentos judiciais",
+      "markdown": "# Procedimentos de sentenciamento e tribunal\n\n## Sentenciamento:\nQuando definindo a sentença por um crime, o responsável pela designação da sentença deve considerar\ntodos os crimes realizados e quaisquer modificadores que podem ser aplicados, e citar eles para o acusado.\nEm seguinte, armazene todos os itens do prisioneiro (Exceto o PDA, rádio ou equipamento essencial para sobrevivência) em um armário.\nColoque roupas de prisoneiro no criminoso e desalgeme ele dentro da cela.\n\nCaso o criminoso tenha cometido vários crimes diferentes, verifique modificador agravante M-05. \n\nEssa é a ordem de hierarquia padrão para designação de sentenças:\n- Carcereiro\n- Segurança Chefe\n- Capitão\n- Oficial de Segurança\n\n# Punições\n## Multas\nSe o crime demandar a aplicação de uma multa, o criminoso deve providenciar o ID para o oficial realizando a prisão para ele sacar o dinheiro em um ATM.\nO dinheiro da multa deve ser inserida para a conta do computador de requisições de segurança.\n\n## Confinamento não-permanente\nConfinamento não-permanente pode ser cumprido em uma cela comunitária (genpop) ou em uma cela própria. \nO temporizador do armário/cela deve ser definido para o tempo da pena. \nO carcereiro e o guarda prisional devem garantir que os direitos do detento estão sendo atendidos.\n\n## Confinamento permanente\nConfinamento permanente pode ser cumprido em uma cela comunitária ou na prisão permanente.\nO carcereiro e o guarda prisional devem garantir que os direitos do detento estão sendo atendidos.\n\n## Execução\nSe o crime demandar uma execução, o criminoso é permitido escolher como ser executado.\nAs escolhas padrão que devem ser apresentadas ao criminoso pelo designador da sentença são as seguintes:\n- Exílio - Ser jogado no espaço. Não pode ser feito se o criminoso for imune aos efeitos de espaçamento.\n- Linha de fogo - Ser executado por armas de longo alcance pelo departamento de segurança.\n- Incineração - Ser queimado vivo por uma estaca de fogo.\n\nO criminoso pode solicitar uma execução alternativa, porém se ela será aceita ou não é decidida pelo designador da sentença.\nPara economizar tempo de empresa, o criminoso tem 3 chances de sugerir um método de execução razoável. Se falhar, o designador\nda sentença decide o método de execução.\n\nApós a execução, os pertences/corpo do criminoso devem ser armazenados ou providenciados ao padre para serem cremados.\n\n## Punições alternativas\nPunições alternativas podem ser sugeridas pelo criminoso ou seu representante legal para reduzir/substituir, e é decisão do designador da sentença aceitar ou não.\nExemplos incluem: \n- Serviço comunitário\n- Cota de mineração\n- Humilhação pública\n- Injeção de implante de rastreamento\n\n\n# Julgamentos\nCaso o acusado deseja, ele é permitido solicitar um julgamento para seu caso.\n\nPara qualquer julgamento, deve ter um juíz que irá realizar o sentenciamento. O juíz deve ser um grupo neutro que não está incluído no caso para um sentenciamento justo.\n\nO juíz define a pena pelos crimes após fazer seu veredito.\n\nEssa é a ordem de hierarquia para quem será o juíz:\n- Representativo da NanoTrasen\n- Capitão\n- Chefe dos Funcionários\n\nO julgamento deve ser realizado no tribunal, exceto em corte marcial."
+    },
+    {
+      "id": "audiencia-sumaria",
+      "titulo": "Audiência sumária",
+      "markdown": "# Audiência sumária\nUm julgamento curto e informal para ofensas menores.\n\nPode ser realizado para crimes de nível 0 e 1.\n\nObjetivo de tempo é de 1-2 minutos.\n\n## Acusação\nO Oficial de segurança responsável pela prisão.\n\n## Defesa\nÉ recomendada a auto-representação do acusado, porém é permitido solicitar um advogado, e o julgamento deve ser pausado até ele chegar.\n\n## Testemunhas\nNão são permitidas testemunhas para economizar tempo valioso de empresa.\n\n\n## Procedimento\n- A acusação cita as acusações.\n- O juíz propõe uma pena para essas acusações, e pergunta se a defesa declara-se culpada.\n- Se a defesa se declarar inocente, ela exponhe seus argumentos e apresenta evidência relevante.\n- O juíz avalia o caso da defesa, e muda a pena se necessário.\n- O juíz encerra o julgamento com seu veredito, e a acusação solta ou escolta o réu para a segurança, se necessário."
+    },
+    {
+      "id": "audiencia-formal",
+      "titulo": "Audiência formal",
+      "markdown": "# Audiência formal\nUm julgamento formal e mais longo para crimes mais severos, de níveis 2-3.\n\nObjetivo de tempo é em torno de 15 minutos.\n\n## Acusação\nO oficial de segurança que realizou a prisão.\n\n## Defesa\nDeve ser oferecido um advogado para representar o réu.\nAuto-representação é permitida, porém não recomendada.\n\n## Testemunhas\nTestemunhas apenas são permitidas se forem absolutamente necessárias para a determinação do julgamento, e no máximo uma testemunha por lado.\n\nTestemunhas não podem ser parte da segurança, comando ou qualquer outra função que não pode se ausentar de seu trabalho.\n\n## Procedimento\n### Consulta pré-julgamento:\nAmbos os lados são permitidos consultar com sua representação, antes do julgamento começar. Consultações são estritamente confidenciais.\n\nAmbos os lados são recomendados planejar e considerar:\n- Evidência a ser apresentada\n- Se o réu irá se declarar culpado ou inocente.\n- As testemunhas que serão chamadas.\n- Se houve alguma circustância capaz de modificar a pena.\n- Se uma punição alternativa pode ser mais adequada.\n\n### Procedimento de audiência:\n\n1. Abertura\n- O juíz identifica todas as partes participantes, e cita as acusações.\n\n2. Declaração\n- O juíz formalmente pergunta \"Como o réu se declara?\"\n- Se o réu se declarar culpado, pule para o sentenciamento.\n- Se o réu se declarar inocente, prossiga.\n\n3. Apresentando argumentos\n- A acusação apresenta seu argumento em sua totalidade, seguida pela defesa.\n- Qualquer evidência deve ser formalmente apresentada para o juíz.\n- Ambos os lados são permitidos chamar testemunhas e questionar elas diretamente.\n- Após cada testemunha, o outro lado é permitido contra-interrogar.\n- O réu é permitido servir como testemunha. Se forem chamados como testemunha, são sujeitos para contra-interrogação.\n\n4. Veredito\n- O juíz determina se o réu é culpado ou inocente para cada uma das acusações individualmente.\n- Se o réu for determinado inocente para todas as acusações, o tribunal é encerrado imediatamente.\n\n5. Sentenciamento\n- Os dois lados agora discutem sobre a pena e sobre se houve circustâncias que deveriam reduzir/aumentar ela.\n- Os dois lados também são permitidos sugerir punições alternativas.\n- O juíz considera esses argumentos e decide na pena final.\n\n6. Encerramento\n- O oficial responsável pela prisão libera ou escolta o réu de volta para o departamento de segurança, conforme necessário."
+    },
+    {
+      "id": "julgamento-prolongado",
+      "titulo": "Julgamento prolongado",
+      "markdown": "# Julgamento prolongado\nUm julgamento prolongado feito para a busca da verdade acima de tudo, deve ser realizado se possível para crimes níveis 4-5.\n\nNão há objetivo de tempo. O julgamento pode ser tão longo quanto precisar.\n\n## Acusação\nO detetive da estação, ou na absência deste, o oficial de segurança que realizou a prisão.\n\n## Defesa\nDeve ser oferecido um advogado para representar o réu.\nAuto-representação é permitida, porém não recomendada.\n\n## Testemunhas\nTestemunhas são autorizadas e recomendadas serem usadas como evidência por ambos os lados.\n\nTestemunhas podem ser qualquer um, incluindo segurança e comando.\n\n## Procedimento\n### Consulta pré-julgamento:\nAmbos os lados são permitidos consultar com sua representação, antes do julgamento começar. Consultações são estritamente confidenciais.\n\nAmbos os lados são recomendados planejar e considerar:\n- Evidência a ser apresentada\n- Se o réu irá se declarar culpado ou inocente.\n- As testemunhas que serão chamadas.\n- Se houve alguma circustância capaz de modificar a pena.\n- Se uma punição alternativa pode ser mais adequada.\n\n### Procedimento de audiência:\n\n1. Abertura\n- O juíz identifica todas as partes participantes, e cita as acusações.\n\n2. Declaração\n- O juíz formalmente pergunta \"Como o réu se declara?\"\n- Se o réu se declarar culpado, pule para o sentenciamento.\n- Se o réu se declarar inocente, prossiga.\n\n3. Argumentos de abertura\n- A acusação apresenta um resumo de tudo que desejam provar, e como irão provar.\n- A defesa apresenta um resumo de seus argumentos e os fatos que irão contestar.\n\n4. Apresentando argumentos\n- A acusação apresenta seu argumento em sua totalidade, seguida pela defesa.\n- Qualquer evidência deve ser formalmente apresentada para o juíz.\n- Ambos os lados são permitidos chamar testemunhas e questionar elas diretamente.\n- Após cada testemunha, o outro lado é permitido contra-interrogar.\n- O réu é permitido servir como testemunha. Se forem chamados como testemunha, são sujeitos para contra-interrogação.\n\n5. Argumentos de encerramento\n- A acusação providencia seu argumento de encerramento, seguida pela defesa.\n\n6. Veredito\n- O juíz determina se o réu é culpado ou inocente para cada uma das acusações individualmente.\n- Se o réu for determinado inocente para todas as acusações, o julgamento é encerrado imediatamente.\n\n7. Alocução\n- O réu é permitido ter uma palavra para discursar com o tribunal diretamente e pessoalmente.\n- O réu não deve ser interrompido ou contra-interrogado durante esse tempo.\n- Essa é a oportunidade do réu se explicar, pedir desculpas ou apelar para a misericórdia do tribunal.\n\n8. Sentenciamento\n- Os dois lados agora discutem sobre a pena e sobre se houve circustâncias que deveriam reduzir/aumentar ela.\n- Os dois lados também são permitidos sugerir punições alternativas.\n- O juíz considera esses argumentos e decide na pena final.\n\n9. Encerramento\n- O oficial responsável pela prisão libera ou escolta o réu de volta para o departamento de segurança, conforme necessário."
+    },
+    {
+      "id": "corte-marcial",
+      "titulo": "Corte marcial",
+      "markdown": "# Corte marcial\nUm julgamento flexível e sobre controle da segurança, feito para casos de emergência ou lei marcial.\n\nPode ser realizado em lei marcial ou em qualquer situação onde não há oportunidade um julgamento tradicional. \n\nObjetivo de tempo é decidido pela segurança.\n\n## Acusação\nO Oficial de segurança responsável pela prisão.\n\n## Defesa\nÉ recomendada a auto-representação do acusado, porém é permitido solicitar um advogado. O julgamento não precisa ser pausado.\n\n## Testemunhas\nA utilização de testemunhas é decidida pelo juíz.\n\n## Juíz\nDiferentemente de outros procedimentos judiciais, o juíz deve ser a maior autoridade competente e disponível atual do departamento de segurança.\n\n## Local\nDecidido pelo juíz. Pode ser realizado no tribunal, no rádio de segurança, ou outros métodos de comunicação.\n\n\n## Procedimento\nO procedimento do julgamento é decidido pelo juíz."
+    },
+    {
+      "id": "lei-marcial",
+      "titulo": "Lei Marcial",
+      "markdown": "# Consolidação das Leis Marciais\n\n<Box>\n  Este conjunto de leis e suas operações devem ser ultillizados apenas para retomar o estado de controle da estação.\n  Não deve ser usado para um regime ditadorial ou um regime contra a Central de Comando e seus funcionários.\n</Box>\n\n## I - Disposições Gerais\n\nArt. 1 - Autoridade Absoluta. A autoridade da Segurança é absoluta. Ordens devem ser obedecidas sem questionamento. Descumprimento resulta em pena de obediencia.\n\nArt. 2 - Suspensão da Garantia Legal. Direitos previstos na Lei Espacial ficam parcial ou totalmente suspensos. Não há direito à apelação ou defesa formal.\n\nArt. 3 - Reclusão Obrigatória. Todos os civis devem permanecer em seus departamentos ou no bar. Circulação sem autorização constitui violação da ordem marcial. Pena: detenção sumária ou execução, a critério da Segurança.\n\n## II - Infrações Menores\n\nArt. 4 - Desobediência Direta. Negar-se a cumprir ordens de oficiais da Segurança. Pena: detenção imediata de até 10 minutos.\n\nArt. 5 - Perturbação da Ordem. Causar pânico, espalhar rumores, provocar brigas ou tumulto. Pena: confinamento preventivo.\n\nArt. 6 - Circulação Indevida. Estar fora de área permitida sem justificativa aprovada. Pena: retomada ao departamento.\n\n## III - Crimes Capitais\n\nArt. 7 - Insurreição. Reuniões, protestos, motins ou desobediência coletiva são atos de rebelião. Pena: prisão ou detenção prisão, conforme gravidade.\n\nArt. 8 - Auxílio ao Inimigo. Acolher, esconder ou colaborar com inimigos. Pena: execução sumária.\n\nArt. 9 - Sabotagem de Infraestrutura. Qualquer dano a sistemas críticos a estação e sua operação. Pena: prisão ou execução imediata, conforme gravidade.\n\nArt. 10 - Usurpação de Autoridade. Assumir função ou acesso sem ordem direta da Segurança ou Chefe de Segurança. Pena: prisão ou execução, conforme gravidade.\n\nArt. 11 - Execuções. Podem ser realizadas sem aviso prévio ou direito a últimas palavras, quando houver ameaça direta à ordem ou risco à estação e sua tripulação por ordem do Chefe de Segurança."
+    }
+  ],
+  "codigo_espacial": [
+    {
+      "id": "homicidio",
+      "capitulo": "II - DOS CRIMES CONTRA A VIDA",
+      "titulo": "Homicídio",
+      "artigos": [
+        "11"
+      ],
+      "markdown": "## Homicídio\n\nArt. 11 - Matar alguém. Pena: quarenta minutos.\n\nParágrafo único: o crime somente se consuma quando a vítima perde seus sinais vitais.\n\n§ 1 º - A pena é de execução se:\n\nI - a vítima tem cargo de chefia na estação ou é integrante da Central de Comando;\nII - o meio do homicídio impede a ressurreição da vítima;\nIII - o autor é reincidente específico, isto é, já cumpriu pena por matar alguém;\nIV - se o autor matou três ou mais pessoas.\n\n§ 2º - A pena é de prisão perpétua se:\n\nI - o autor mata a vítima para roubá-la.\nII - o autor matou duas pessoas."
+    },
+    {
+      "id": "porteArtefato",
+      "capitulo": "",
+      "titulo": "Porte de Artefato Proibido",
+      "artigos": [
+        "26"
+      ],
+      "markdown": "## Porte de Artefato Proibido\n\nArt. 26 - Possuir qualquer objeto capaz de causar dano à estação ou formas de vida, sem devida autorização para tal. Pena: cinco minutos e confisco.\n\n§ 1º - Se o artefato é explosivo ou de uso exclusivo de autoridades, aplica-se a pena em dobro."
+    },
+    {
+      "id": "lesaoCorporal",
+      "capitulo": "II - DOS CRIMES CONTRA A VIDA",
+      "titulo": "Lesão corporal",
+      "artigos": [
+        "12"
+      ],
+      "markdown": "## Lesão corporal\n\nArt. 12 - Lesionar alguém. Pena: dez minutos.\n\n§ 1º - A pena é de vinte e cinco minutos se a vítima sofre grave risco de vida por conta da lesão, ou se resulta em debilidade permanente.\n\n§ 2º - Caso a vítima morra por conta da lesão, mesmo que o autor não quisesse matar a vítima, considera-se o art. 11 deste código ao invés deste.\n\n§ 3º - Se a lesão é leve, a pena é de cinco minutos."
+    },
+    {
+      "id": "omissaoDeSocorros",
+      "capitulo": "II - DOS CRIMES CONTRA A VIDA",
+      "titulo": "Omissão de socorros",
+      "artigos": [
+        "13"
+      ],
+      "markdown": "## Omissão de socorros\n\nArt. 13 - Deixar de prestar socorro a uma pessoa em grave risco de vida ou que poderia ser revivida. Pena: três minutos.\n\n§ 1º - Se o autor exerce função na ala médica, a pena é de cinco minutos e demissão.\n\n§ 2º - Se a vítima tem cargo de autoridade, aumenta-se a pena em dobro.\n\n§ 3º - Deixa-se de aplicar pena se, para salvar a vítima, fosse necessário correr grave e evidente risco de se perder a própria vida, ou se o faz para salvar outra pessoa em mesma necessidade."
+    },
+    {
+      "id": "sequestro",
+      "capitulo": "II - DOS CRIMES CONTRA A VIDA",
+      "titulo": "Sequestro",
+      "artigos": [
+        "14"
+      ],
+      "markdown": "## Sequestro\n\nArt. 14 - Sequestrar alguém. Pena: 20 minutos.\n\n§ 1º - Se a vítima tem cargo de autoridade, aumenta-se a pena em ½ (um meio)."
+    },
+    {
+      "id": "furto",
+      "capitulo": "III - DOS CRIMES CONTRA O PATRIMÔNIO",
+      "titulo": "Furto",
+      "artigos": [
+        "15"
+      ],
+      "markdown": "## Furto\n\nArt. 15 - Furtar alguém ou um bem da estação, sem uso de violência ou ameaça. Pena: cinco minutos e confisco.\n\n§ 1º - A pena é de quinze minutos se:\nI - o bem furtado tem grande importância para estação;\nII - o bem furtado é altamente perigoso;\nIII - o bem furtado possui alto valor econômico.\n\n§ 2º - Deixa de se aplicar a pena se o bem subtraído é irrelevante e/ou tem baixo valor econômico."
+    },
+    {
+      "id": "roubo",
+      "capitulo": "III - DOS CRIMES CONTRA O PATRIMÔNIO",
+      "titulo": "Roubo",
+      "artigos": [
+        "16"
+      ],
+      "markdown": "## Roubo\n\nArt. 16 - Roubar alguém, com uso de violência e/ou grave ameaça. Pena: vinte minutos e confisco.\n\n§ 1º - A pena é de trinta minutos se:\nI - o bem furtado tem grande importância para estação;\nII - o bem furtado é altamente perigoso;\nIII - o bem furtado possui alto valor econômico."
+    },
+    {
+      "id": "estelionato",
+      "capitulo": "III - DOS CRIMES CONTRA O PATRIMÔNIO",
+      "titulo": "Estelionato",
+      "artigos": [
+        "17"
+      ],
+      "markdown": "## Estelionato\n\nArt. 17 - Enganar alguém em benefício próprio ou de outra pessoa, gerando grave prejuízo à vítima. Pena: dez minutos.\n\n§ 1º - Da mesma forma se aplica o não cumprimento de acordos."
+    },
+    {
+      "id": "vandalismo",
+      "capitulo": "III - DOS CRIMES CONTRA O PATRIMÔNIO",
+      "titulo": "Vandalismo",
+      "artigos": [
+        "18"
+      ],
+      "markdown": "## Vandalismo\n\nArt. 18 - Deteriorar algo pertencente à estação ou outra pessoa. Pena: cinco minutos.\n\n§ 1º - A pena é de dez minutos se o bem possui alto valor econômico."
+    },
+    {
+      "id": "receptacao",
+      "capitulo": "III - DOS CRIMES CONTRA O PATRIMÔNIO",
+      "titulo": "Receptação",
+      "artigos": [
+        "19"
+      ],
+      "markdown": "## Receptação\n\nArt. 19 - Adquirir, guardar ou estar em posse de bem subtraído de outra pessoa, sem autorização desta. Pena: cinco minutos e confisco.\n\n§ 1º - A pena é de dez minutos se o bem possui alto valor econômico."
+    },
+    {
+      "id": "traicaoCorporativa",
+      "capitulo": "IV - DOS CRIMES CONTRA A NANOTRASEN",
+      "titulo": "Traição Corporativa",
+      "artigos": [
+        "20"
+      ],
+      "markdown": "## Traição Corporativa\n\nArt. 20 - Integrar corporação, organização, grupo, culto ou organismo contrário aos valores e objetivos da NanoTrasen. **Pena:** prisão perpétua e demissão.\n\n§ 1º - Se o integrante da organização, detido, concordar em delatar outros integrantes de corporações rivais infiltrados, a pena pode ser reduzida para trinta minutos, desde que a informação se confirme.\n\n§ 2 º - Se a corporação, organização, grupo ou culto tem por objetivo a aniquilação completa da estação, ou de múltiplas formas de vida, a pena é de execução imediata, sem os direitos previstos neste código."
+    },
+    {
+      "id": "sabotagem",
+      "capitulo": "IV - DOS CRIMES CONTRA A NANOTRASEN",
+      "titulo": "Sabotagem",
+      "artigos": [
+        "21"
+      ],
+      "markdown": "## Sabotagem\n\nArt. 21 - Danificar, inutilizar, ou desativar estruturas e/ou sistemas essenciais da estação. Pena: vinte minutos.\n\n§ 1º - Se a sabotagem causa dano extremo e/ou irreversível à estação, a pena é de prisão perpétua.\n\n§ 2º - Se da sabotagem resulta morte, mesmo que indiretamente, a pena é de execução.\n\n§ 3º - Aplica-se nos mesmos termos a adulteração da atmosfera artificial da estação, desde que cause risco a estação e formas de vida."
+    },
+    {
+      "id": "insurreicao",
+      "capitulo": "IV - DOS CRIMES CONTRA A NANOTRASEN",
+      "titulo": "Insurreição",
+      "artigos": [
+        "22"
+      ],
+      "markdown": "## Insurreição\n\nArt. 22 - Constituir ou apoiar insurreição, motim, rebelião, dissidência ou revolta contrária a NanoTrasen. Pena: detenção provisória até desistência.\n\n§ 1 º - Se o rebelde se recusar a desistir da insurreição, ou se é líder da rebelião, a pena é de execução imediata."
+    },
+    {
+      "id": "usurpacao",
+      "capitulo": "IV - DOS CRIMES CONTRA A NANOTRASEN",
+      "titulo": "Usurpação",
+      "artigos": [
+        "23"
+      ],
+      "markdown": "## Usurpação\n\nArt. 23 - Exercer função da qual não lhe foi concedida pela Central de Comando, ou então, sem autorização do Capitão ou do Chefe dos Funcionários. Pena: três minutos."
+    },
+    {
+      "id": "invasao",
+      "capitulo": "IV - DOS CRIMES CONTRA A NANOTRASEN",
+      "titulo": "Invasão",
+      "artigos": [
+        "24"
+      ],
+      "markdown": "## Invasão\n\nArt. 24 - Invadir local proibido e/ou de uso restrito, sem permissão. Pena: três minutos."
+    },
+    {
+      "id": "falsidadeIdeologica",
+      "capitulo": "IV - DOS CRIMES CONTRA A NANOTRASEN",
+      "titulo": "Falsidade Ideológica",
+      "artigos": [
+        "27"
+      ],
+      "markdown": "## Falsidade Ideológica\n\nArt. 27 - Falsificar ou ocultar sua própria identidade, alterar suas próprias permissões ou fornecer informações falsas sobre si a autoridades. Pena: detenção até a devida identificação.\n\n§ 1º - Se a ocultação se deu por motivo plausível, e o autor procurou se identificar ou obter um ID legítimo, não se aplica pena."
+    },
+    {
+      "id": "ocultismo",
+      "capitulo": "IV - DOS CRIMES CONTRA A NANOTRASEN",
+      "titulo": "Ocultismo",
+      "artigos": [
+        "28"
+      ],
+      "markdown": "## Ocultismo\n\nArt. 28 - Praticar rituais, magias, feitiços, invocações ou quaisquer atos ocultistas que contrariem os princípios operacionais da NanoTrasen. Pena: vinte minutos e confisco.\n\n§ 1 º - Se da prática resulta risco a estação ou formas de vida, a pena é de execução imediata."
+    },
+    {
+      "id": "producaoProibida",
+      "capitulo": "IV - DOS CRIMES CONTRA A NANOTRASEN",
+      "titulo": "Produção Proibida",
+      "artigos": [
+        "29"
+      ],
+      "markdown": "## Produção Proibida\n\nArt. 29 - Produzir, fabricar, modificar ou armazenar itens, equipamentos, artefatos ou substâncias proibidas pela NanoTrasen, independentemente da intenção. **Pena:** dez minutos, confisco e demissão."
+    },
+    {
+      "id": "abusoDePoder",
+      "capitulo": "2-06",
+      "titulo": "Abuso de poder",
+      "artigos": [],
+      "markdown": "## Abuso de poder\n\nUtilizar de autoridade para exercer controle extremo fora de situação de emergência, criar benefício próprio,\nignorar cadeia de comando ou para efetuar ordens que sejam ilegais ou sem relação com a função.\n\n-# OOC: Impedir comandantes que pensam que ter um cargo de comando é permissão pra tratar todo mundo\ncomo escravo ou ignorar POP."
+    },
+    {
+      "id": "abandono",
+      "capitulo": "1-12",
+      "titulo": "Abandono",
+      "artigos": [],
+      "markdown": "## Abandono\n\nAusentar-se de seu posto por período prolongado sem autorização formal, aviso prévio ou justificativa médica válida."
+    },
+    {
+      "id": "omissao",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Omissão",
+      "artigos": [],
+      "markdown": "## Omissão\n\n  Art. 4º - Omissões, e não só ações, também devem ser punidas, caso o fato esteja descrito em quaisquer dos artigos deste código."
+    },
+    {
+      "id": "prevaricacao",
+      "capitulo": "V - DOS CRIMES ADMINISTRATIVOS",
+      "titulo": "Prevaricação",
+      "artigos": [
+        "32"
+      ],
+      "markdown": "## Prevaricação\n\nArt. 32 - Deixar de cumprir seu dever funcional por interesse próprio, conveniência pessoal ou conivência com terceiros, prejudicando a operação da estação. Pena: demissão."
+    },
+    {
+      "id": "omissaoAdministrativa",
+      "capitulo": "V - DOS CRIMES ADMINISTRATIVOS",
+      "titulo": "Omissão",
+      "artigos": [
+        "33"
+      ],
+      "markdown": "## Omissão\n\nArt. 33 - Deixar de comunicar eventos, incidentes e comportamentos suspeitos, desde que relevantes, ao comando, durante exercício de cargo de autoridade. Pena: demissão."
+    },
+    {
+      "id": "negligencia",
+      "capitulo": "V - DOS CRIMES ADMINISTRATIVOS",
+      "titulo": "Negligência",
+      "artigos": [
+        "34"
+      ],
+      "markdown": "## Negligência\n\nArt. 34 – Deixar de observar os protocolos, precauções, instruções técnicas ou condutas esperadas no exercício de sua função, colocando em risco a integridade da estação, de sistemas ou de indivíduos. Pena: advertência formal.\n\n§ 1º – Se da negligência resulta prejuízo operacional relevante, falha técnica grave ou ferimentos, aplica-se pena de rebaixamento. \n§ 2º – Se resultar em morte, dano irreversível ou colapso de sistema essencial, a pena é de demissão com detenção de dez minutos."
+    },
+    {
+      "id": "incompetencia",
+      "capitulo": "V - DOS CRIMES ADMINISTRATIVOS",
+      "titulo": "Incompetência",
+      "artigos": [
+        "35"
+      ],
+      "markdown": "## Incompetência\n\nArt. 35 – Demonstrar incapacidade reiterada para o exercício das funções atribuídas, mesmo após treinamentos, orientações ou advertências formais. Pena: demissão.\n\n§ 1º – Se resultar em morte, dano irreversível ou colapso de sistema essencial, a pena é de demissão com detenção de dez minutos."
+    },
+    {
+      "id": "condutaInadequada",
+      "capitulo": "0-05 -",
+      "titulo": "Conduta Inadequada",
+      "artigos": [],
+      "markdown": "## Conduta Inadequada\n\nAgir de forma contrária as normas comuns esperadas da civilidade, dignidade e função.\n-# OOC: Pessoas andando peladas, falando idiotices demais, spam de grito e outras formas LRP de agir, forma IC da\nSec combater esse tipo de atitude."
+    },
+    {
+      "id": "insubordinacao",
+      "capitulo": "V - DOS CRIMES ADMINISTRATIVOS",
+      "titulo": "Insubordinação",
+      "artigos": [
+        "37"
+      ],
+      "markdown": "## Insubordinação\n\nArt. 37 - Desobedecer sistematicamente autoridade da estação e/ou da NanoTrasen, de hierarquia superior a sua, recusando-se a cumprir suas ordens. Pena: advertência formal.\n\n§ 1º - Se o cumprimento da ordem era essencial e o não cumprimento gerou prejuízo relevante à estação ou integrante desta, ou se influenciou outras pessoas a também não cumprirem tais ordens, desde que não constitua crime mais grave, a pena é de demissão.\n\n§ 2º - Ordem de autoridades superiores devem ser cumpridas independentemente de sua legalidade aparente, sendo que denúncias de abuso devem ser comunicadas diretamente à Central de Comando."
+    },
+    {
+      "id": "difamacao",
+      "capitulo": "VI - DOS CRIMES CONTRA A HONRA",
+      "titulo": "Difamação",
+      "artigos": [
+        "42"
+      ],
+      "markdown": "## Difamação\n\nArt. 42 - Propagar informações falsas ou deturpadas que prejudiquem a reputação de outro membro da estação ou da NanoTrasen. Pena: advertência formal.\n\n§ 1º – Se a difamação ocorrer de forma reiterada, a pena é de rebaixamento e/ou demissão."
+    },
+    {
+      "id": "calunia",
+      "capitulo": "0-09",
+      "titulo": "Calúnia",
+      "artigos": [],
+      "markdown": "## Calúnia\n\nPropositalmente espalhar mentira com intuito de degradar a reputação ou imagem de um tripulante ou\ndepartamento. Caso a mentira envolva a falsa denúncia de um crime considere Denúncia falsa de crime.\n-# OOC: Impedir ações onde não há ofensa porém ainda existe tentativa de criar uma falsa narrativa, um exemplo\nseria um assistente dizer que uma área recentemente espaçada está assim a muito tempo e a Eng ainda não fez\nnada sobre, ou um tripulante recusando serviço a outro alegando falsamente ser por ordem de superior."
+    },
+    {
+      "id": "desrespeitoAutoridade",
+      "capitulo": "VI - DOS CRIMES CONTRA A HONRA",
+      "titulo": "Desrespeito à Autoridade",
+      "artigos": [
+        "44"
+      ],
+      "markdown": "## Desrespeito à Autoridade\n\nArt. 44 – Insultar, desacatar ou manifestar desdém explícito contra superiores hierárquicos, autoridades ou representantes oficiais da NanoTrasen, pelo mero exercício de suas funções. \nPena: rebaixamento/demissão.\n\n§ 1º – caso o infrator já esteja no cargo mais baixo da hierarquia, tornando assim impossível seu rebaixamento/demissão, a pena é de 5 minutos ao invés."
+    },
+    {
+      "id": "perturbacao",
+      "capitulo": "VII - DOS CRIMES CONTRA A ORDEM",
+      "titulo": "Perturbação",
+      "artigos": [
+        "45"
+      ],
+      "markdown": "## Perturbação\n\nArt. 45 - Causar desordem, por meio de comportamentos antiéticos que perturbem negativamente o ambiente de trabalho, a moral ou o convívio com terceiros. Pena: advertência formal.\n§ 1º - A pena será de 5 minutos se houver reincidência neste artigo, desde que não constitua crime mais grave."
+    },
+    {
+      "id": "resistencia",
+      "capitulo": "VII - DOS CRIMES CONTRA A ORDEM",
+      "titulo": "Resistência",
+      "artigos": [
+        "46"
+      ],
+      "markdown": "## Resistência\n\nArt. 46 - Resistir ou recusar ordem realizada por autoridade de segurança. Pena: três minutos."
+    },
+    {
+      "id": "obstrucaoJustica",
+      "capitulo": "VII - DOS CRIMES CONTRA A ORDEM",
+      "titulo": "Obstrução de Justiça",
+      "artigos": [
+        "47"
+      ],
+      "markdown": "## Obstrução de Justiça\n\nArt. 47 - Impedir que autoridades exerçam suas atividades, em benefício próprio ou de outrem. Pena: cinco minutos."
+    },
+    {
+      "id": "evasaoPrisao",
+      "capitulo": "VII - DOS CRIMES CONTRA A ORDEM",
+      "titulo": "Evasão de Prisão",
+      "artigos": [
+        "48"
+      ],
+      "markdown": "## Evasão de Prisão\n\nArt. 48 - Fugir de prisão da qual se está detido, evadir sua detenção por autoridades, ou ajudar outra pessoa para tal fim. Pena: dez minutos.\n§ 1º - Caso o autor tente evadir a prisão, ou danificar sua cela reiteradamente, após diversos pedidos para que cesse as tentativas, de forma que seja inviável mantê-lo preso, é autorizada execução do detento."
+    },
+    {
+      "id": "associacaoCriminosa",
+      "capitulo": "VII - DOS CRIMES CONTRA A ORDEM",
+      "titulo": "Associação Criminosa",
+      "artigos": [
+        "49"
+      ],
+      "markdown": "## Associação Criminosa\n\nArt. 49 - Associar-se a uma ou mais pessoas para cometer crimes. Pena: cinco minutos."
+    },
+    {
+      "id": "lesaTrasen",
+      "capitulo": "VIII - DO CRIME CAPITAL",
+      "titulo": "Lesa-Trasen",
+      "artigos": [
+        "50"
+      ],
+      "markdown": "## Lesa-Trasen\n\nArt. 50 - Toda ação, praticada por pessoa investida de função de comando ou posição estratégica que atente direta ou indiretamente contra a soberania da NanoTrasen, sua cadeia de comando, suas operações, ativos ou reputação, quando executada sem motivação externa legítima. Pena: determinada pela Central de Comando.\n\n§ 1º - São exemplos de condutas configuradas como crime de Lesa-Trasen, entre outras: \nI - Declarar independência da estação, fragmentar sua lealdade, ou promover cisão com a Central de Comando; \nII - Utilizar meios de comando para instaurar regimes autoritários, teocráticos, revolucionários ou não-autorizados; \nIII - Colaborar com facções hostis, anômalas ou concorrentes da NanoTrasen, por ação ou omissão deliberada;\nIV - Comprometer deliberadamente a ordem ou hierarquia da estação, em má fé.\n\n§ 2º - O crime de Lesa-Trasen é considerado, por este estatuto, infração máxima contra a ordem institucional, e sua simples tentativa, planejamento, incitação ou apologia já constituem agravantes puníveis.\n§ 3º - A participação de múltiplos membros do comando, especial rigor àqueles que exercem as funções de Capitão, resultará na pena magna."
+    },
+    {
+      "id": "anterioridadeDoCrime",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Anterioridade do crime",
+      "artigos": [
+        "1"
+      ],
+      "markdown": "## Anterioridade do crime\nArt. 1º – Não há crime sem artigo que o defina, exceto quando a NanoTrasen decidir que houve crime.\n\n§ 1º – Em caso de incerteza ou dúvida acerca destas leis, entre em contato com a a̶d̶m̶i̶n̶i̶s̶t̶r̶a̶ç̶ã̶o̶  ou Central de Comando."
+    },
+    {
+      "id": "intencaoDoCrime",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Intenção do crime",
+      "artigos": [
+        "2"
+      ],
+      "markdown": "## Intenção do crime\nArt. 2º – Considera-se intenção quando o agente pratica o ato com vontade livre e consciente de alcançar o resultado.\n\nParágrafo único: A intenção influencia a tipificação e gravidade do crime, podendo agravar ou atenuar a pena."
+    },
+    {
+      "id": "consumacao",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Consumação",
+      "artigos": [
+        "3"
+      ],
+      "markdown": "## Consumação\nArt. 3º – O crime se consuma quando todos os elementos do tipo penal estão presentes.\n\nParágrafo único: A consumação é requisito para aplicação da pena prevista no artigo correspondente."
+    },
+    {
+      "id": "tentativa",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Tentativa",
+      "artigos": [
+        "4"
+      ],
+      "markdown": "## Tentativa\nArt. 4º – Considera-se tentativa quando, iniciada a execução do crime, este não se consuma por circunstâncias alheias à vontade do agente.\n\nParágrafo único: A tentativa pode resultar em pena reduzida, conforme avaliação da autoridade responsável."
+    },
+    {
+      "id": "exercicioDaFuncao",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Exercício da função",
+      "artigos": [
+        "5"
+      ],
+      "markdown": "## Exercício da função\nArt. 5º – O exercício regular de direito ou função não constitui crime, salvo abuso ou desvio de finalidade.\n\nParágrafo único: A análise do exercício da função deve considerar o contexto e a necessidade do ato praticado.\n\nPena: Não se aplica pena específica, mas influencia a tipificação e gravidade do crime."
+    },
+    {
+      "id": "coautoria",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Co-autoria",
+      "artigos": [
+        "6"
+      ],
+      "markdown": "## Co-autoria\nArt. 6º – Considera-se co-autor quem, de qualquer modo, concorre para a prática do crime.\n\nParágrafo único: A pena será aplicada na medida da participação de cada agente."
+    },
+    {
+      "id": "crimeImpossivel",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Crime impossível",
+      "artigos": [
+        "7"
+      ],
+      "markdown": "## Crime impossível\nArt. 7º – Não há crime quando, por ineficácia absoluta do meio ou por absoluta impropriedade do objeto, é impossível consumar-se o crime.\n\nParágrafo único: Não se aplica pena nos casos de crime impossível."
+    },
+    {
+      "id": "irrelevancia",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Irrelevância",
+      "artigos": [
+        "8"
+      ],
+      "markdown": "## Irrelevância\nArt. 8º – Não há relevância penal para fatos que não causem lesão ou perigo de lesão ao bem jurídico protegido.\n\nParágrafo único: Fatos irrelevantes não são puníveis."
+    },
+    {
+      "id": "causalidade",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Causalidade",
+      "artigos": [
+        "9"
+      ],
+      "markdown": "## Causalidade\nArt. 9º – O agente só responde pelo resultado que sua ação ou omissão causou diretamente.\n\nParágrafo único: A causalidade deve ser comprovada para responsabilização penal."
+    },
+    {
+      "id": "legitimaDefesa",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Legítima defesa",
+      "artigos": [
+        "10"
+      ],
+      "markdown": "## Legítima defesa\nArt. 10 – Não há crime quando o agente pratica o fato em legítima defesa, para proteger direito próprio ou alheio, usando moderadamente os meios necessários.\n\nParágrafo único: O excesso doloso ou culposo será punido na forma da lei."
+    },
+    {
+      "id": "reincidencia",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Reincidência",
+      "artigos": [
+        "11"
+      ],
+      "markdown": "## Reincidência\nArt. 11 – Considera-se reincidente quem pratica novo crime após ter sido condenado por outro.\n\nParágrafo único: A reincidência pode agravar a pena aplicada ao agente."
+    },
+    {
+      "id": "aplicacao",
+      "capitulo": "I - DAS DISPOSIÇÕES GERAIS",
+      "titulo": "Aplicação",
+      "artigos": [
+        "12"
+      ],
+      "markdown": "## Aplicação\nArt. 12 – As disposições deste código aplicam-se a todos os crimes cometidos na estação, salvo disposição em contrário.\n\nParágrafo único: Casos omissos serão resolvidos pela Central de Comando.\n\n## Pena\nNão se aplica pena específica, mas influencia a tipificação e gravidade do crime."
+    }
+  ]
+}

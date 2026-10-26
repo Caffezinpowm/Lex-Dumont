@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Consulta rápida e pesquisável da Lei Espacial da Dumont Station / Gaby Station. Crimes, penas, modificadores, procedimentos e código espacial."
+    />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#07171b" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <title>Lei Espacial · Dumont Station</title>
+    <script>
+      // Tema: usa a preferência salva. Sem preferência, o CSS escuro é o padrão
+      // e @media (prefers-color-scheme: light) oferece o tema claro do sistema.
+      (() => {
+        try {
+          const saved = localStorage.getItem('space-law:theme');
+          if (saved === 'dark' || saved === 'light') {
+            document.documentElement.dataset.theme = saved;
+          }
+          const theme =
+            saved === 'dark' || saved === 'light'
+              ? saved
+              : window.matchMedia('(prefers-color-scheme: light)').matches
+                ? 'light'
+                : 'dark';
+          document
+            .querySelector('meta[name="theme-color"]')
+            ?.setAttribute('content', theme === 'dark' ? '#07171b' : '#edf4f1');
+        } catch {
+          /* localStorage pode estar indisponível em contextos restritos. */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <div id="app">
+      <div class="boot-screen" role="status" aria-live="polite">
+        <div class="boot-screen__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <circle cx="32" cy="32" r="19" fill="none" stroke="currentColor" stroke-width="2" />
+            <ellipse
+              cx="32"
+              cy="32"
+              rx="28"
+              ry="10"
+              fill="none"
+              stroke="currentColor"
+              stroke-opacity=".45"
+              stroke-width="1.5"
+              transform="rotate(-28 32 32)"
+            />
+            <circle cx="32" cy="32" r="4" fill="currentColor" />
+          </svg>
+        </div>
+        <p class="boot-screen__eyebrow">DUMONT STATION · SS14</p>
+        <p class="boot-screen__title">Sincronizando a Lei Espacial</p>
+        <span class="boot-screen__line" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <div id="toast-region" class="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <noscript>
+      <p style="padding: 2rem; font-family: sans-serif">
+        Este visualizador precisa de JavaScript para carregar e pesquisar a Lei Espacial.
+      </p>
+    </noscript>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

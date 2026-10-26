@@ -1,0 +1,22 @@
+{
+  "name": "space-law-dumont",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Visualizador não oficial da Lei Espacial da Dumont Station / Gaby Station (Space Station 14).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && node scripts/copy-404.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dompurify": "^3.3.0",
+    "marked": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.0"
+  }
+}
