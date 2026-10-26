@@ -14,7 +14,7 @@ export function renderHome(ctx: PageContext): PageRenderResult {
   setPageMeta({
     title: 'Lei Espacial · Dumont Station',
     description:
-      'Consulte rapidamente os crimes, penas, modificadores e procedimentos da Lei Espacial da Dumont Station / Gaby Station, com busca instantânea.',
+      'Consulte rapidamente os crimes, penas, modificadores e procedimentos da Lei Espacial da Dumont Station, com busca instantânea.',
   });
 
   const levelRows = data.niveis

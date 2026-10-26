@@ -5,7 +5,7 @@ interface PageMeta {
 
 const SITE_NAME = 'Lei Espacial · Dumont Station';
 const DEFAULT_DESCRIPTION =
-  'Consulta rápida e pesquisável da Lei Espacial da Dumont Station / Gaby Station: crimes, penas, modificadores, julgamentos e código espacial.';
+  'Consulta rápida e pesquisável da Lei Espacial da Dumont Station: crimes, penas, modificadores, julgamentos e código espacial.';
 
 export function setPageMeta({ title, description }: PageMeta): void {
   document.title = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;

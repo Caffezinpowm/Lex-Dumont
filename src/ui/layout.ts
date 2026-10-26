@@ -132,11 +132,11 @@ export function createLayout(container: HTMLElement, data: LawDataService): AppL
           ${icon('menu')}
         </button>
 
-        <a class="brand" href="${appUrl('/')}" aria-label="Lei Espacial Dumont · Gaby — início">
+        <a class="brand" href="${appUrl('/')}" aria-label="Lei Espacial Dumont — início">
           ${brandMark()}
           <span class="brand__text">
             <strong>Lei Espacial</strong>
-            <small>Dumont · Gaby</small>
+            <small>Dumont Station</small>
           </span>
         </a>
 
@@ -273,7 +273,7 @@ export function createLayout(container: HTMLElement, data: LawDataService): AppL
 
           <p class="sidebar__source">Fonte: <a href="${escapeAttr(
             isSafeHttpUrl(data.data.fonte.repositorio) ? data.data.fonte.repositorio : '#',
-          )}" target="_blank" rel="noopener noreferrer">Project Dumont / Gaby Station</a></p>
+          )}" target="_blank" rel="noopener noreferrer">Project Dumont</a></p>
         </div>
       </aside>
 

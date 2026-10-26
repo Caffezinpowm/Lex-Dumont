@@ -1,8 +1,8 @@
 # Lei Espacial · Dumont Station
 
-Visualizador **não oficial** da Lei Espacial da **Dumont Station / Gaby Station** (Space Station 14). O site transforma o conteúdo do guidebook do servidor em uma referência rápida, pesquisável e legível, sem alterar o texto legal.
+Visualizador **não oficial** da Lei Espacial da **Dumont Station** (Space Station 14). O site transforma o conteúdo do guidebook do servidor em uma referência rápida, pesquisável e legível, sem alterar o texto legal.
 
-> **Aviso:** este projeto não é afiliado à Dumont Station, à Gaby Station, à Space Station 14 ou à Goob Station. Em caso de divergência, o **guidebook dentro do jogo** é a referência oficial. O conteúdo reproduzido pertence ao repositório de origem.
+> **Aviso:** este projeto não é afiliado à Dumont Station, à Space Station 14 ou à Goob Station. Em caso de divergência, o **guidebook dentro do jogo** é a referência oficial. O conteúdo reproduzido pertence ao repositório de origem.
 
 ---
 

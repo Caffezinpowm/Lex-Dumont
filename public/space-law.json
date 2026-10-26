@@ -4,12 +4,10 @@
     "branch": "dumont",
     "caminhos": [
       "Resources/ServerInfo/Guidebook/ServerRules/SpaceLaw/",
-      "Resources/ServerInfo/_Gabystation/Guidebook/SpaceLawSubEntries/",
-      "Resources/ServerInfo/_Gabystation/Guidebook/LeiMarcial.xml",
       "Resources/Prototypes/Guidebook/rules.yml"
     ],
     "licenca": "AGPL-3.0-or-later (conteúdo do repositório)",
-    "servidor": "Dumont Station / Gaby Station (Space Station 14, fork do Goob Station)"
+    "servidor": "Dumont Station (Space Station 14, fork do Goob Station)"
   },
   "moeda": "spessos",
   "unidade_pena": "minutos de prisão",
