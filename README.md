@@ -15,6 +15,7 @@ Visualizador **não oficial** da Lei Espacial da **Dumont Station** (Space Stati
 - [Build e pré-visualização](#build-e-pré-visualização)
 - [Deploy](#deploy)
   - [Netlify](#netlify)
+  - [Vercel](#vercel)
   - [GitHub Pages](#github-pages)
   - [Outros servidores estáticos](#outros-servidores-estáticos)
 - [Rotas](#rotas)
@@ -121,6 +122,18 @@ O repositório já inclui `netlify.toml`:
 ```
 
 Também existe `public/_redirects` com a mesma regra, copiada para `dist/`. Basta conectar o repositório à Netlify; nenhuma variável de ambiente é necessária para publicar na raiz do domínio.
+
+### Vercel
+
+Conecte o repositório à Vercel e mantenha o preset **Vite**. O build usa `npm run build` e publica `dist/`. O `vercel.json` na raiz adiciona o fallback de SPA:
+
+```json
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
+```
+
+Sem essa regra, a página inicial funciona, mas rotas profundas como `/crimes/3-03` retornam 404 ao serem abertas diretamente.
 
 ### GitHub Pages
 
